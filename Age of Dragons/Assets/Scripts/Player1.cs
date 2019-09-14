@@ -2,23 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shooting : MonoBehaviour
+public class Player1 : MonoBehaviour
 {
-
+    //Used for aiming
     public GameObject reticel;
-    Vector3 mousePos;
+    //Bounds of play area
     public Camera mainCam;
+    //Thing player is shooting
     public GameObject shot;
-    GameObject myShot;
-    public float sen;
-    Vector3 targetLoc;
+
     float targetDis;
     float modForce;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+    Vector3 mousePos;
+    GameObject myShot;
+    Vector3 targetLoc;
 
     // Update is called once per frame
     void Update()
@@ -33,20 +31,23 @@ public class Shooting : MonoBehaviour
             targetLoc = transform.position - reticel.transform.position;
             targetDis = Vector3.Distance(transform.position, reticel.transform.position);
             myShot = Instantiate(shot, transform.position, transform.rotation);
-            if(targetDis <= 4)
+            if (targetDis <= 4)
             {
+                print("min");
                 modForce = -500;
             }
-            else if(targetDis >= 10)
+            else if (targetDis >= 10)
             {
+                print("max");
                 modForce = -800;
             }
             else
             {
+                print("inbetween");
                 modForce = -targetDis * 100;
             }
-            print(targetDis);
-            myShot.GetComponent<IceBall>().Fire(targetLoc/8 * (modForce));
+
+            myShot.GetComponent<IceBall>().Fire(targetLoc / 8 * (modForce));
         }
     }
 }
