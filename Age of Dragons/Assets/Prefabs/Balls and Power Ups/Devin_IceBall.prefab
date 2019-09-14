@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 3554915823613670947}
   m_Layer: 0
   m_Name: Devin_IceBall
-  m_TagString: Untagged
+  m_TagString: Ice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

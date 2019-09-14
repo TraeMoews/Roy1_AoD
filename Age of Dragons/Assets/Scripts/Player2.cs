@@ -68,7 +68,6 @@ public class Player2 : MonoBehaviour
             {
                 modForce = -targetDis * 100;
             }
-            print(targetDis);
             myShot.GetComponent<IceBall>().Fire(targetLoc / 8 * (modForce));
         }
     }
