@@ -47,7 +47,7 @@ public class Player2 : MonoBehaviour
         {
             mousePos.x += Input.GetAxis("Horizontal") * sen;
             mousePos.y += Input.GetAxis("Vertical") * sen;
-            mousePos.z = transform.position.z;
+            mousePos.z = transform.position.z; 
             reticel.transform.position = mousePos;
         }
 
