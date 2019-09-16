@@ -1,7 +1,7 @@
 ﻿/*  ╔═════════════════════════════╡  Mech Defense Force 2019 ╞══════════════════╗            
     ║ Authors:  Donald Thatcher          Email: donald.thatcher@outlook.com     ║
     ╟───────────────────────────────────────────────────────────────────────────╢░ 
-    ║ Purpose:  Contorls Pegs and Territories                                   ║░
+    ║ Purpose:  Controls Pegs and Territories                                   ║░
     ║ Usage:    Handles color change and locking of Pegs and Territoties        ║░
     ╚═══════════════════════════════════════════════════════════════════════════╝░
        ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
