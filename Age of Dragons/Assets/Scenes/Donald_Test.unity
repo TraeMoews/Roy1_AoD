@@ -209,7 +209,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 25.426, y: 36.49, z: 44.624}
 --- !u!1001 &93595408
 PrefabInstance:
@@ -226,12 +226,12 @@ PrefabInstance:
     - target: {fileID: 8539776004757664603, guid: 1e93b42a390ae164aa4c82a76d914e1f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.64
+      value: 11.35
       objectReference: {fileID: 0}
     - target: {fileID: 8539776004757664603, guid: 1e93b42a390ae164aa4c82a76d914e1f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14
+      value: 12.88
       objectReference: {fileID: 0}
     - target: {fileID: 8539776004757664603, guid: 1e93b42a390ae164aa4c82a76d914e1f,
         type: 3}
@@ -261,7 +261,11 @@ PrefabInstance:
     - target: {fileID: 8539776004757664603, guid: 1e93b42a390ae164aa4c82a76d914e1f,
         type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
+      value: 1
+=======
       value: 4
+>>>>>>> b3131425d856914f6ed3d4acba7dd1c86ef960d1
       objectReference: {fileID: 0}
     - target: {fileID: 8539776004757664603, guid: 1e93b42a390ae164aa4c82a76d914e1f,
         type: 3}
@@ -283,6 +287,8 @@ PrefabInstance:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 215986664}
+<<<<<<< HEAD
+=======
     - target: {fileID: 8539776004757664615, guid: 1e93b42a390ae164aa4c82a76d914e1f,
         type: 3}
       propertyPath: shot
@@ -299,6 +305,7 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+>>>>>>> b3131425d856914f6ed3d4acba7dd1c86ef960d1
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e93b42a390ae164aa4c82a76d914e1f, type: 3}
 --- !u!1001 &120709532
@@ -1003,12 +1010,12 @@ PrefabInstance:
     - target: {fileID: 1306029289293421165, guid: 1c86021993e046c4c9b7fe6d170591af,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.866547
+      value: -14.17
       objectReference: {fileID: 0}
     - target: {fileID: 1306029289293421165, guid: 1c86021993e046c4c9b7fe6d170591af,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14
+      value: 12.23
       objectReference: {fileID: 0}
     - target: {fileID: 1306029289293421165, guid: 1c86021993e046c4c9b7fe6d170591af,
         type: 3}
@@ -1060,6 +1067,12 @@ PrefabInstance:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 215986664}
+<<<<<<< HEAD
+    - target: {fileID: 8579012455768490037, guid: 1c86021993e046c4c9b7fe6d170591af,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5
+=======
     - target: {fileID: 1306029289293421153, guid: 1c86021993e046c4c9b7fe6d170591af,
         type: 3}
       propertyPath: shot
@@ -1075,6 +1088,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+>>>>>>> b3131425d856914f6ed3d4acba7dd1c86ef960d1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c86021993e046c4c9b7fe6d170591af, type: 3}
@@ -1865,6 +1879,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0a43e4e69cbfcb4f95a289cbe184aec, type: 3}
+--- !u!1 &5512532686222872412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5512532686222872412, guid: 8aba3e706d486e5449c339308a8962c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 5632963550334956625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5632963550334956625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1937,6 +1957,11 @@ PrefabInstance:
       propertyPath: pegManRef
       value: 
       objectReference: {fileID: 6507128815781128121}
+    - target: {fileID: 7540477833438974904, guid: 8aba3e706d486e5449c339308a8962c7,
+        type: 3}
+      propertyPath: peg
+      value: 
+      objectReference: {fileID: 5512532686222872412}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8aba3e706d486e5449c339308a8962c7, type: 3}
 --- !u!114 &6507128815781128121 stripped
