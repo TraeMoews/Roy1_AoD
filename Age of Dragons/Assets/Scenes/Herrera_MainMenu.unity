@@ -5514,7 +5514,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: STORY
+  m_Text: Duel
 --- !u!222 &413904036
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14509,7 +14509,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PLAY YOUR STORY
+  m_Text: DUELING DRAGONS
 --- !u!222 &1049946417
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16919,7 +16919,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PLAY YOUR STORY
+  m_Text: DUELING DRAGONS
 --- !u!222 &1239799418
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18903,7 +18903,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: STORY
+  m_Text: DUEL
 --- !u!222 &1352764415
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24977,7 +24977,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: STORY
+  m_Text: DUEL
 --- !u!222 &1769254342
 CanvasRenderer:
   m_ObjectHideFlags: 0
