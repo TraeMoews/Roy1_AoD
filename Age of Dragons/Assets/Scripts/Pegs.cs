@@ -16,26 +16,27 @@ public class Pegs : MonoBehaviour
 
     #region Public
     public GameObject peg;
-    public Rigidbody fire;
-    public Rigidbody ice;
+    public Rigidbody fireball;
+    public Rigidbody iceball;
     public Material iceMat;
     public Material fireMat;
+    public PegManagmentTemp pegManRef;
 
     #endregion
 
     #region Private
-    private bool ghost;
-    private float hit = 0f;
     private Renderer rend;
+    private bool fire;
+    private bool ice;
 
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
-        ghost = false;
         rend = GetComponent<Renderer>();
         rend.enabled = true;
+        pegManRef = FindObjectOfType<PegManagmentTemp>();
     }
 
     // Update is called once per frame
@@ -46,29 +47,40 @@ public class Pegs : MonoBehaviour
 
     #region Fuctions
 
-    // Will disable peg in scene when hit twice by same color ball
-    public void ghostPeg()
+    // Determine what ball hit peg and turns it the respective color then deletes peg
+    void OnCollisionEnter(Collision collision)
     {
-        if (hit == 2)
+        if (!fire && !ice)
         {
-            ghost = true;
-        }
-    }
-
-    // Determine what ball hit peg and turns it the respective color
-    void OnCollisionEnter(Collision coll)
-    {
-        switch (coll.gameObject.tag)
-        {
-            case "Ice":
-            rend.sharedMaterial = iceMat;
-            Debug.Log("Ice");
-            break;
-
-            case "Fire":        
-            rend.sharedMaterial = fireMat;
-            Debug.Log("Fire");
-            break;
+            if (gameObject.CompareTag("Plain"))
+            {
+                gameObject.tag = collision.collider.tag;
+                if (gameObject.tag == "Fire")
+                {
+                    rend.sharedMaterial = fireMat;
+                    gameObject.tag = collision.collider.tag;
+                }
+                else if (gameObject.tag == "Ice")
+                {
+                    rend.sharedMaterial = iceMat;
+                    gameObject.tag = collision.collider.tag;
+                }
+            }
+            else if (collision.gameObject.CompareTag("Fire") && gameObject.CompareTag("Fire"))
+            {
+                print("Second Fire");
+                fire = true;
+                pegManRef.RemovePegs(this);
+                Destroy(gameObject);
+            }
+            else if (collision.gameObject.CompareTag("Ice") && gameObject.CompareTag("Ice"))
+            {
+                print("Second Ice");
+                ice = true;
+                pegManRef.RemovePegs(this);
+                Destroy(gameObject);
+            }
+            
         }
     }
     #endregion
