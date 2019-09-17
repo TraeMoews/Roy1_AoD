@@ -12,6 +12,7 @@ public class Player1 : MonoBehaviour
     public GameObject shot;
 
     float targetDis;
+    [SerializeField]
     float modForce;
 
     Vector3 mousePos;
@@ -39,7 +40,7 @@ public class Player1 : MonoBehaviour
             else if (targetDis >= 10)
             {
                 print("max");
-                modForce = -800;
+                modForce = -500;
             }
             else
             {
