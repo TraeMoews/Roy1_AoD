@@ -80,7 +80,17 @@ public class Pegs : MonoBehaviour
                 pegManRef.RemovePegs(this);
                 Destroy(gameObject);
             }
-            
+            else if (gameObject.tag == "Fire")
+            {
+                gameObject.tag = collision.collider.tag;
+                rend.sharedMaterial = iceMat;
+            }
+            else if (gameObject.tag == "Ice")
+            {
+                gameObject.tag = collision.collider.tag;
+                rend.sharedMaterial = fireMat;
+            }
+
         }
     }
     #endregion
