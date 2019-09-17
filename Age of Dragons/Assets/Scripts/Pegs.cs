@@ -34,7 +34,7 @@ public class Pegs : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rend = GetComponent<Renderer>();
+        rend = GetComponentInChildren<Renderer>();
         rend.enabled = true;
         pegManRef = FindObjectOfType<PegManagmentTemp>();
     }
