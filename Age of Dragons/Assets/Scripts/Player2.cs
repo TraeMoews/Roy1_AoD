@@ -14,6 +14,7 @@ public class Player2 : MonoBehaviour
 
     public float sen;
     float targetDis;
+    [SerializeField]
     float modForce;
 
     // Update is called once per frame
