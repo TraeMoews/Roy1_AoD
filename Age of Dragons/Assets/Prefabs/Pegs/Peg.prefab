@@ -106,7 +106,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   peg: {fileID: 4222021471041541605}
-  fire: {fileID: 3057906332135613222, guid: 04118b1338df61246b60b10e72ff4589, type: 3}
-  ice: {fileID: 3554915823613670945, guid: f36e9de117432d146844143213d78cc0, type: 3}
+  fireball: {fileID: 3057906332135613222, guid: 04118b1338df61246b60b10e72ff4589,
+    type: 3}
+  iceball: {fileID: 3554915823613670945, guid: f36e9de117432d146844143213d78cc0, type: 3}
   iceMat: {fileID: 2100000, guid: 418c23fc0e28c4b4abc85a7bcc7e8320, type: 2}
   fireMat: {fileID: 2100000, guid: 45b681c140999dc498ce0478191b8eaf, type: 2}
+  pegManRef: {fileID: 0}

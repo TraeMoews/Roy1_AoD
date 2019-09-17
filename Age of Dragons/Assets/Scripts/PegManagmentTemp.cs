@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class PegManagmentTemp : MonoBehaviour
 {
-    PegTransformation[] allPegs;
+    Pegs[] allPegs;
     float fire;
     float ice;
-    List<PegTransformation> peg;
+    List<Pegs> peg;
 
     // Start is called before the first frame update
     void Start()
     {
-        allPegs = FindObjectsOfType<PegTransformation>();
+        allPegs = FindObjectsOfType<Pegs>();
     }
     
 
-    public void RemovePegs(PegTransformation _temp)
+    public void RemovePegs(Pegs _temp)
     {
         int _totalPegs = 0;
         for(int i = 0; i < allPegs.Length; i++)

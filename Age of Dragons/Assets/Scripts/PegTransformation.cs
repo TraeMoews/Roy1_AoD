@@ -33,23 +33,25 @@ public class PegTransformation : MonoBehaviour
             {
                 print("Second Fire");
                 fire = true;
-                pegManRef.RemovePegs(this);
+                //pegManRef.RemovePegs(this);
                 Destroy(gameObject);
             }
             else if (collision.gameObject.CompareTag("Ice") && gameObject.CompareTag("Ice"))
             {
                 print("Second Ice");
                 ice = true;
-                pegManRef.RemovePegs(this);
+                //pegManRef.RemovePegs(this);
                 Destroy(gameObject);
             }
             else if (gameObject.tag == "Fire")
             {
                 gameObject.tag = collision.collider.tag;
+                //rend.sharedMaterial = fireMat;
             }
             else if (gameObject.tag == "Ice")
             {
                 gameObject.tag = collision.collider.tag;
+                //rend.sharedMaterial = iceMat;
             }
         }
     }
