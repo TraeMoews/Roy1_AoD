@@ -62,7 +62,7 @@ public class Player2 : MonoBehaviour
             }
             else if (targetDis >= 10)
             {
-                modForce = -800;
+                modForce = -500;
             }
             else
             {
