@@ -15,23 +15,27 @@ public class Pegs : MonoBehaviour
 {
 
     #region Public
-    public Rigidbody pegBody;
+    public GameObject peg;
     public Rigidbody fire;
     public Rigidbody ice;
+    public Material iceMat;
+    public Material fireMat;
+
     #endregion
 
     #region Private
     private bool ghost;
     private float hit = 0f;
-    private GameObject peg;
+    private Renderer rend;
+
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
         ghost = false;
-
-
+        rend = GetComponent<Renderer>();
+        rend.enabled = true;
     }
 
     // Update is called once per frame
@@ -42,6 +46,7 @@ public class Pegs : MonoBehaviour
 
     #region Fuctions
 
+    // Will disable peg in scene when hit twice by same color ball
     public void ghostPeg()
     {
         if (hit == 2)
@@ -50,19 +55,20 @@ public class Pegs : MonoBehaviour
         }
     }
 
-    public void OnCollisionEnter(Collision coll)
+    // Determine what ball hit peg and turns it the respective color
+    void OnCollisionEnter(Collision coll)
     {
-        if (coll.gameObject.tag == "IceBall")
+        switch (coll.gameObject.tag)
         {
-            Color ice = coll.gameObject.GetComponent<Material>().color;
-            gameObject.GetComponent<Material>().color = ice;
+            case "Ice":
+            rend.sharedMaterial = iceMat;
             Debug.Log("Ice");
-        }
-        else if (coll.gameObject.tag=="FireBall")
-        {
-            Color fire = coll.gameObject.GetComponent<Material>().color;
-            gameObject.GetComponent<Material>().color = fire;
+            break;
+
+            case "Fire":        
+            rend.sharedMaterial = fireMat;
             Debug.Log("Fire");
+            break;
         }
     }
     #endregion
