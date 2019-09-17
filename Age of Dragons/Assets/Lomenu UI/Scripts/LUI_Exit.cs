@@ -2,10 +2,14 @@
 using System.Collections;
 
 public class LUI_Exit : MonoBehaviour
-{	
-		public void QuitGame()
+{
+
+    public void QuitGame()
 		{
-			Debug.Log ("As you wish! :)");
-			Application.Quit();
-		}
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
 }

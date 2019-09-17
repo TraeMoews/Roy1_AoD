@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Herrera_MainMenu.unity
+    guid: b1fa4bfd7c62d2e489297b5291bdd629
+  - enabled: 1
+    path: Assets/Scenes/Donald_Test.unity
+    guid: 9acd99ca37ccc3e439f98ce1dc5a3ff7
   m_configObjects: {}
