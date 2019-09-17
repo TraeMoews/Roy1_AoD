@@ -14,6 +14,7 @@ public class Player2 : MonoBehaviour
 
     public float sen;
     float targetDis;
+    [SerializeField]
     float modForce;
 
     // Update is called once per frame
@@ -62,7 +63,7 @@ public class Player2 : MonoBehaviour
             }
             else if (targetDis >= 10)
             {
-                modForce = -800;
+                modForce = -500;
             }
             else
             {
