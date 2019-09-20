@@ -1,11 +1,4 @@
-﻿/*  ╔═════════════════════════════╡  Mech Defense Force 2019 ╞══════════════════╗            
-    ║ Authors:  Donald Thatcher          Email: donald.thatcher@outlook.com     ║
-    ╟───────────────────────────────────────────────────────────────────────────╢░ 
-    ║ Purpose:  Controls Pegs and Territories                                   ║░
-    ║ Usage:    Handles color change and locking of Pegs and Territoties        ║░
-    ╚═══════════════════════════════════════════════════════════════════════════╝░
-       ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-*/
+﻿
 
 using System.Collections;
 using System.Collections.Generic;
@@ -22,6 +15,8 @@ public class Pegs : MonoBehaviour
     public Material fireMat;
     public PegManagmentTemp pegManRef;
 
+    public int points;
+
     #endregion
 
     #region Private
@@ -37,12 +32,6 @@ public class Pegs : MonoBehaviour
         rend = GetComponentInChildren<Renderer>();
         rend.enabled = true;
         pegManRef = FindObjectOfType<PegManagmentTemp>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     #region Fuctions
@@ -71,6 +60,7 @@ public class Pegs : MonoBehaviour
                 print("Second Fire");
                 fire = true;
                 pegManRef.RemovePegs(this);
+                
                 Destroy(gameObject);
             }
             else if (collision.gameObject.CompareTag("Ice") && gameObject.CompareTag("Ice"))

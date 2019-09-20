@@ -251,3 +251,4 @@ MonoBehaviour:
   iceMat: {fileID: 2100000, guid: 418c23fc0e28c4b4abc85a7bcc7e8320, type: 2}
   fireMat: {fileID: 2100000, guid: 45b681c140999dc498ce0478191b8eaf, type: 2}
   pegManRef: {fileID: 0}
+  points: 100

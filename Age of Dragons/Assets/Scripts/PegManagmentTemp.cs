@@ -9,6 +9,9 @@ public class PegManagmentTemp : MonoBehaviour
     float ice;
     List<Pegs> peg;
 
+    
+    public GameManager gm;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +33,7 @@ public class PegManagmentTemp : MonoBehaviour
                         fire++;
                         print("Fire Score: " + fire);
                         allPegs[i] = null;
+                        
                     }
                     else if (allPegs[i].gameObject.CompareTag("Ice"))
                     {
