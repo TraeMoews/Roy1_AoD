@@ -9,8 +9,8 @@ public class PegManagmentTemp : MonoBehaviour
     float ice;
     List<Pegs> peg;
 
+    public int points;
     
-    public GameManager gm;
 
     // Start is called before the first frame update
     void Start()

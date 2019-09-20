@@ -15,7 +15,8 @@ public class Pegs : MonoBehaviour
     public Material fireMat;
     public PegManagmentTemp pegManRef;
 
-    public int points;
+    
+    public GameManager gm;
 
     #endregion
 
@@ -60,8 +61,8 @@ public class Pegs : MonoBehaviour
                 print("Second Fire");
                 fire = true;
                 pegManRef.RemovePegs(this);
-                
                 Destroy(gameObject);
+                //gm.UpdateScore(gameObject.GetComponent<PegManagmentTemp>().points);
             }
             else if (collision.gameObject.CompareTag("Ice") && gameObject.CompareTag("Ice"))
             {
