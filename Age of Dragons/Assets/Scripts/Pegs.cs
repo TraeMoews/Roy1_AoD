@@ -13,7 +13,7 @@ public class Pegs : MonoBehaviour
     public Rigidbody iceball;
     public Material iceMat;
     public Material fireMat;
-    public PegManagmentTemp pegManRef;
+    
     public AudioClip IceSound;
     public AudioClip FireSound;
     public AudioSource PegSound;
@@ -35,7 +35,8 @@ public class Pegs : MonoBehaviour
     {
         rend = GetComponentInChildren<Renderer>();
         rend.enabled = true;
-        pegManRef = FindObjectOfType<PegManagmentTemp>();
+       
+        gm = FindObjectOfType<GameManager>();
     }
 
     #region Fuctions
@@ -69,7 +70,7 @@ public class Pegs : MonoBehaviour
                 PegSound.Play();
                 print("Second Fire");
                 fire = true;
-                pegManRef.RemovePegs(this);
+                gm.RemovePegs(this);
                 Destroy(gameObject);
                 //gm.UpdateScore(gameObject.GetComponent<PegManagmentTemp>().points);
             }
@@ -79,7 +80,7 @@ public class Pegs : MonoBehaviour
                 PegSound.Play();
                 print("Second Ice");
                 ice = true;
-                pegManRef.RemovePegs(this);
+                gm.RemovePegs(this);
                 Destroy(gameObject);
             }
             else if (gameObject.tag == "Fire")
