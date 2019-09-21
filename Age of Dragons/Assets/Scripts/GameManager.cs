@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,12 +12,16 @@ public class GameManager : MonoBehaviour
     public int blueScore;
     public Text bluescoreText;
 
+    public Text winnerText;
+
     Pegs[] allPegs;
     float fire;
     float ice;
     List<Pegs> peg;
 
     public int points;
+    bool gameComplete;
+    float timer = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +29,19 @@ public class GameManager : MonoBehaviour
         allPegs = FindObjectsOfType<Pegs>();
         bluescoreText.text = "Score: " + blueScore;
         redscoreText.text = "Score: " + redScore;
+    }
+
+    void Update()
+    {
+        if (gameComplete)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+        }
     }
 
     public void UpdateScore(int points)
@@ -69,16 +87,18 @@ public class GameManager : MonoBehaviour
         {
             if (fire > ice)
             {
-                print("Fire wins!!!! " + fire + " to " + ice);
+                winnerText.text = "Fire wins!!!! " + fire + " to " + ice;
             }
             else if (ice > fire)
             {
-                print("Ice wins!!!! " + ice + " to " + fire);
+                winnerText.text = "Ice wins!!!! " + ice + " to " + fire;
             }
             else
             {
-                print("Tie! ice: " + ice + " Fire: " + fire);
+                winnerText.text = "Tie! ice: " + ice + " Fire: " + fire;
             }
+
+            gameComplete = true;
         }
 
     }
