@@ -34,13 +34,13 @@ public class Player2 : MonoBehaviour
             mousePos += new Vector3(0, .25f, 0);
             reticel.transform.position = mousePos;
         }
-        else if (mainCam.WorldToScreenPoint(reticel.transform.position).x + (Input.GetAxis("Horizontal") * sen) > 1450)
+        else if (mainCam.WorldToScreenPoint(reticel.transform.position).x + (Input.GetAxis("Horizontal") * sen) > 1000)
         {
             print("Off screen Left");
             mousePos -= new Vector3(.25f, 0, 0);
             reticel.transform.position = mousePos;
         }
-        else if(mainCam.WorldToScreenPoint(reticel.transform.position).y + (Input.GetAxis("Vertical") * sen) > 900)
+        else if(mainCam.WorldToScreenPoint(reticel.transform.position).y + (Input.GetAxis("Vertical") * sen) > 760)
         {
             print("Off screen Top");
             mousePos -= new Vector3(0, .25f, 0);
@@ -67,17 +67,18 @@ public class Player2 : MonoBehaviour
             myShot = Instantiate(shot, transform.position, transform.rotation);
             if (targetDis <= 4)
             {
-                modForce = -500;
+                modForce = -50;
             }
             else if (targetDis >= 10)
             {
-                modForce = -500;
+                modForce = -50;
             }
             else
             {
-                modForce = -targetDis * 100;
+                modForce = -targetDis * 10;
             }
-            myShot.GetComponent<IceBall>().Fire(targetLoc / 8 * (modForce));
+
+            myShot.GetComponent<IceBall>().Fire(targetLoc * (modForce));
         }
     }
 }
