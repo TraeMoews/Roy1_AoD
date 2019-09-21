@@ -2,16 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class scenManager : MonoBehaviour
 {
-    public void Donald_Test()
+    public void loadLevel (int LevelNumber)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Donald_Test");
+        SceneManager.LoadScene(LevelNumber);
     }
-
-
-
-
-
 }
