@@ -210,7 +210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5512532686222872412}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -7.011}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2950099854382268698}
@@ -246,12 +246,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   peg: {fileID: 1232934720300950002}
+  burst: {fileID: 930116582489133665, guid: 207ca522d62fb394591370800b89a89f, type: 3}
   fireball: {fileID: 3057906332135613222, guid: 04118b1338df61246b60b10e72ff4589,
     type: 3}
   iceball: {fileID: 3554915823613670945, guid: f36e9de117432d146844143213d78cc0, type: 3}
   iceMat: {fileID: 2100000, guid: 418c23fc0e28c4b4abc85a7bcc7e8320, type: 2}
   fireMat: {fileID: 2100000, guid: 45b681c140999dc498ce0478191b8eaf, type: 2}
-  pegManRef: {fileID: 0}
   IceSound: {fileID: 8300000, guid: 81e70e8a50177144086a785944729ac1, type: 3}
   FireSound: {fileID: 8300000, guid: 6703ace0d3ade764f89fe923a0ec21e5, type: 3}
   PegSound: {fileID: 3749771427206607197}

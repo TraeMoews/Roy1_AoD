@@ -9,6 +9,7 @@ public class Pegs : MonoBehaviour
 
     #region Public
     public GameObject peg;
+    public GameObject burst;
     public Rigidbody fireball;
     public Rigidbody iceball;
     public Material iceMat;
@@ -71,6 +72,9 @@ public class Pegs : MonoBehaviour
                 print("Second Fire");
                 fire = true;
                 gm.RemovePegs(this);
+                //Invoke("Peg Particle System", 1);
+                Instantiate(burst, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+                //print("boom boom");
                 Destroy(gameObject);
                 //gm.UpdateScore(gameObject.GetComponent<PegManagmentTemp>().points);
             }
@@ -81,6 +85,9 @@ public class Pegs : MonoBehaviour
                 print("Second Ice");
                 ice = true;
                 gm.RemovePegs(this);
+                //Invoke("Peg Particle System", 1);
+                Instantiate(burst, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+                //print("boom boom");
                 Destroy(gameObject);
             }
             else if (gameObject.tag == "Fire")
