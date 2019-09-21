@@ -38,20 +38,21 @@ public class Player1 : MonoBehaviour
             targetLoc = transform.position - reticel.transform.position;
             targetDis = Vector3.Distance(transform.position, reticel.transform.position);
             myShot = Instantiate(shot, transform.position, transform.rotation);
+
             if (targetDis <= 4)
             {
-                modForce = -500;
+                modForce = -50;
             }
             else if (targetDis >= 10)
             {
-                modForce = -500;
+                modForce = -50;
             }
             else
             {
-                modForce = -targetDis * 100;
+                modForce = -targetDis * 10;
             }
-
-            myShot.GetComponent<IceBall>().Fire(targetLoc / 8 * (modForce));
+            
+            myShot.GetComponent<IceBall>().Fire(targetLoc * (modForce));
         }
     }
 }
