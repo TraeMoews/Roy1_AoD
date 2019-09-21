@@ -19,6 +19,7 @@ public class Player1 : MonoBehaviour
     GameObject myShot;
     Vector3 targetLoc;
 
+    bool hasShot;
     // Update is called once per frame
     void Update()
     {
@@ -26,25 +27,27 @@ public class Player1 : MonoBehaviour
         //mousePos = mousePos * sen;
         mousePos.z = transform.position.z;
         reticel.transform.position = mousePos;
-
-        if (Input.GetMouseButtonDown(0))
+        if(myShot == null)
         {
+            hasShot = false;
+        }
+
+        if (Input.GetMouseButtonDown(0) && !hasShot)
+        {
+            hasShot = true;
             targetLoc = transform.position - reticel.transform.position;
             targetDis = Vector3.Distance(transform.position, reticel.transform.position);
             myShot = Instantiate(shot, transform.position, transform.rotation);
             if (targetDis <= 4)
             {
-                print("min");
                 modForce = -500;
             }
             else if (targetDis >= 10)
             {
-                print("max");
                 modForce = -500;
             }
             else
             {
-                print("inbetween");
                 modForce = -targetDis * 100;
             }
 

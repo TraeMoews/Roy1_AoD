@@ -17,6 +17,8 @@ public class Player2 : MonoBehaviour
     [SerializeField]
     float modForce;
 
+    bool hasShot;
+
     // Update is called once per frame
     void Update()
     {
@@ -52,8 +54,14 @@ public class Player2 : MonoBehaviour
             reticel.transform.position = mousePos;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(myShot == null)
         {
+            hasShot = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && !hasShot)
+        {
+            hasShot = true;
             targetLoc = transform.position - reticel.transform.position;
             targetDis = Vector3.Distance(transform.position, reticel.transform.position);
             myShot = Instantiate(shot, transform.position, transform.rotation);
