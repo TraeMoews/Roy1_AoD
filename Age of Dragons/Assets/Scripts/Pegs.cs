@@ -14,6 +14,9 @@ public class Pegs : MonoBehaviour
     public Material iceMat;
     public Material fireMat;
     public PegManagmentTemp pegManRef;
+    public AudioClip IceSound;
+    public AudioClip FireSound;
+    public AudioSource PegSound;
 
     
     public GameManager gm;
@@ -47,17 +50,23 @@ public class Pegs : MonoBehaviour
                 gameObject.tag = collision.collider.tag;
                 if (gameObject.tag == "Fire")
                 {
+                    PegSound.clip = FireSound;
+                    PegSound.Play();
                     rend.sharedMaterial = fireMat;
                     gameObject.tag = collision.collider.tag;
                 }
                 else if (gameObject.tag == "Ice")
                 {
+                    PegSound.clip = IceSound;
+                    PegSound.Play();
                     rend.sharedMaterial = iceMat;
                     gameObject.tag = collision.collider.tag;
                 }
             }
             else if (collision.gameObject.CompareTag("Fire") && gameObject.CompareTag("Fire"))
             {
+                PegSound.clip = FireSound;
+                PegSound.Play();
                 print("Second Fire");
                 fire = true;
                 pegManRef.RemovePegs(this);
@@ -66,6 +75,8 @@ public class Pegs : MonoBehaviour
             }
             else if (collision.gameObject.CompareTag("Ice") && gameObject.CompareTag("Ice"))
             {
+                PegSound.clip = IceSound;
+                PegSound.Play();
                 print("Second Ice");
                 ice = true;
                 pegManRef.RemovePegs(this);
@@ -73,11 +84,15 @@ public class Pegs : MonoBehaviour
             }
             else if (gameObject.tag == "Fire")
             {
+                PegSound.clip = IceSound;
+                PegSound.Play();
                 gameObject.tag = collision.collider.tag;
                 rend.sharedMaterial = iceMat;
             }
             else if (gameObject.tag == "Ice")
             {
+                PegSound.clip = FireSound;
+                PegSound.Play();
                 gameObject.tag = collision.collider.tag;
                 rend.sharedMaterial = fireMat;
             }

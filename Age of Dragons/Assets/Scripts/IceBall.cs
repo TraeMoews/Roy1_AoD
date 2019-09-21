@@ -6,10 +6,12 @@ public class IceBall : MonoBehaviour
 {
     Rigidbody myRB;
     float timer = 10f;
+    public AudioSource BallSource;
+    public AudioClip BallHit;
     // Start is called before the first frame update
     void Start()
     {
-        
+        BallSource.clip = BallHit;
     }
 
     // Update is called once per frame
@@ -27,5 +29,9 @@ public class IceBall : MonoBehaviour
     {
         myRB = GetComponent<Rigidbody>();
         myRB.AddForce(_force);
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        BallSource.Play();
     }
 }
