@@ -34,13 +34,13 @@ public class Player2 : MonoBehaviour
             mousePos += new Vector3(0, .25f, 0);
             reticel.transform.position = mousePos;
         }
-        else if (mainCam.WorldToScreenPoint(reticel.transform.position).x + (Input.GetAxis("Horizontal") * sen) > 1000)
+        else if (mainCam.WorldToScreenPoint(reticel.transform.position).x + (Input.GetAxis("Horizontal") * sen) > 1450)
         {
             print("Off screen Left");
             mousePos -= new Vector3(.25f, 0, 0);
             reticel.transform.position = mousePos;
         }
-        else if(mainCam.WorldToScreenPoint(reticel.transform.position).y + (Input.GetAxis("Vertical") * sen) > 760)
+        else if(mainCam.WorldToScreenPoint(reticel.transform.position).y + (Input.GetAxis("Vertical") * sen) > 900)
         {
             print("Off screen Top");
             mousePos -= new Vector3(0, .25f, 0);
