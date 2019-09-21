@@ -6,8 +6,10 @@ public class IceBall : MonoBehaviour
 {
     Rigidbody myRB;
     float timer = 10f;
+    float idleTimer = 2f;
     public AudioSource BallSource;
     public AudioClip BallHit;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +19,17 @@ public class IceBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer -= Time.deltaTime;
-        if(timer <= 0)
+        if (myRB.velocity.y <= .5f)
         {
-            Destroy(gameObject);
-            print("Bye bye");
+            idleTimer -= Time.deltaTime;
+            if(idleTimer <= 0)
+            {
+                Destroy(gameObject);
+            }
+        }
+        else
+        {
+            idleTimer = 2f;
         }
     }
 
