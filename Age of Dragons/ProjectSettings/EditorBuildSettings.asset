@@ -9,6 +9,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Herrera_MainMenu.unity
     guid: b1fa4bfd7c62d2e489297b5291bdd629
   - enabled: 1
-    path: Assets/Scenes/Herrera_UI.unity
-    guid: 2b533b600947b024b8beba7b623d7e1d
+    path: Assets/Scenes/Devin_3.unity
+    guid: 559aa0c6929f0084d9c0cceff556f4ee
+  - enabled: 1
+    path: Assets/Scenes/Devin_4.unity
+    guid: 6997570db8df55943a27a61261b386cc
+  - enabled: 1
+    path: Assets/Scenes/Jacob Levels/Jacob_1.unity
+    guid: 4ebe1d983b8b4fb4eaf4ac69b651265c
+  - enabled: 1
+    path: Assets/Scenes/Jacob Levels/Jacob_2.unity
+    guid: 7c4acf1f9b77da2478b5da92baeec9fc
+  - enabled: 1
+    path: Assets/Scenes/Jacob Levels/Jacob_3.unity
+    guid: 329a6ec1d06f9944b8676491ec830a82
+  - enabled: 1
+    path: Assets/Scenes/Jacob Levels/Jacob_4.unity
+    guid: 30070d53aaa458e4ea6d68da188f6b72
+  - enabled: 1
+    path: Assets/Scenes/Jacob Levels/Jacob_5.unity
+    guid: 2605cbaf6ce6839499a30d3a1873ceca
   m_configObjects: {}
