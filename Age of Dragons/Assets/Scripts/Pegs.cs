@@ -100,6 +100,7 @@ public class Pegs : MonoBehaviour
             {
                 PegSound.clip = IceSound;
                 PegSound.Play();
+                lt.color = Color.blue;
                 gameObject.tag = collision.collider.tag;
                 rend.sharedMaterial = iceMat;
             }
@@ -107,6 +108,7 @@ public class Pegs : MonoBehaviour
             {
                 PegSound.clip = FireSound;
                 PegSound.Play();
+                lt.color = Color.red;
                 gameObject.tag = collision.collider.tag;
                 rend.sharedMaterial = fireMat;
             }
