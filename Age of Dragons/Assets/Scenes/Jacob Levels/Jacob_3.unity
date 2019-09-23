@@ -8365,6 +8365,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UnbreakableBlock (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5283392837622153211, guid: 74c4f6d45b4610c4db0006af821aa8e9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5283392837622153210, guid: 74c4f6d45b4610c4db0006af821aa8e9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8454,6 +8459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UnbreakableBlock (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5283392837622153211, guid: 74c4f6d45b4610c4db0006af821aa8e9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5283392837622153210, guid: 74c4f6d45b4610c4db0006af821aa8e9,
         type: 3}

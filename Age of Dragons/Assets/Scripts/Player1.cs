@@ -25,6 +25,12 @@ public class Player1 : MonoBehaviour
 
     bool hasShot;
     // Update is called once per frame
+
+    private void Awake()
+    {
+        QualitySettings.vSyncCount = 0;  // VSync must be disabled
+        Application.targetFrameRate = 60;
+    }
     void Update()
     {
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);

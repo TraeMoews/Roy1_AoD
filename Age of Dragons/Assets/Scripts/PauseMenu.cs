@@ -39,14 +39,21 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
-    public void Restart(int LevelNumber)
+    public void Restart()
     {
-        SceneManager.LoadScene(LevelNumber);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void LoadMenu()
     {
         SceneManager.LoadScene("Herrera_MainMenu");
+        Time.timeScale = 1;
+    }
+
+    public void LoadLevelSelect()
+    {
+        SceneManager.LoadScene("Select Level");
+        Time.timeScale = 1;
     }
 
     public void QuitGame()
