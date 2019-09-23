@@ -19,6 +19,8 @@ public class Pegs : MonoBehaviour
     public AudioClip FireSound;
     public AudioSource PegSound;
 
+    public Light lt;
+
     
     public GameManager gm;
 
@@ -36,6 +38,8 @@ public class Pegs : MonoBehaviour
     {
         rend = GetComponentInChildren<Renderer>();
         rend.enabled = true;
+
+        lt = GetComponentInChildren<Light>();
        
         gm = FindObjectOfType<GameManager>();
     }
@@ -54,6 +58,7 @@ public class Pegs : MonoBehaviour
                 {
                     PegSound.clip = FireSound;
                     PegSound.Play();
+                    lt.color = Color.red;
                     rend.sharedMaterial = fireMat;
                     gameObject.tag = collision.collider.tag;
                 }
@@ -61,6 +66,7 @@ public class Pegs : MonoBehaviour
                 {
                     PegSound.clip = IceSound;
                     PegSound.Play();
+                    lt.color = Color.blue;
                     rend.sharedMaterial = iceMat;
                     gameObject.tag = collision.collider.tag;
                 }
