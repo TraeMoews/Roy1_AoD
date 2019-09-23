@@ -12,6 +12,11 @@ public class Player2 : MonoBehaviour
     Vector3 targetLoc;
     Vector3 mousePos;
 
+    //AudioSource for launcher sound
+    public AudioSource LaunchSource;
+    //AudioClip for launcher sound
+    public AudioClip LaunchClip;
+
     public float sen;
     float targetDis;
     [SerializeField]
@@ -65,6 +70,9 @@ public class Player2 : MonoBehaviour
             targetLoc = transform.position - reticel.transform.position;
             targetDis = Vector3.Distance(transform.position, reticel.transform.position);
             myShot = Instantiate(shot, transform.position, transform.rotation);
+            LaunchSource.clip = LaunchClip;
+            LaunchSource.Play();
+
             if (targetDis <= 4)
             {
                 modForce = -50;

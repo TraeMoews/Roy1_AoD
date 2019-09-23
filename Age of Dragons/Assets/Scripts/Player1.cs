@@ -10,6 +10,10 @@ public class Player1 : MonoBehaviour
     public Camera mainCam;
     //Thing player is shooting
     public GameObject shot;
+    //AudioSource for launcher sound
+    public AudioSource LaunchSource;
+    //AudioClip for launcher sound
+    public AudioClip LaunchClip;
 
     float targetDis;
     [SerializeField]
@@ -38,6 +42,8 @@ public class Player1 : MonoBehaviour
             targetLoc = transform.position - reticel.transform.position;
             targetDis = Vector3.Distance(transform.position, reticel.transform.position);
             myShot = Instantiate(shot, transform.position, transform.rotation);
+            LaunchSource.clip = LaunchClip;
+            LaunchSource.Play();
 
             if (targetDis <= 4)
             {
