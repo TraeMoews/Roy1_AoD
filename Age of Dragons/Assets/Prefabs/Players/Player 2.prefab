@@ -32,7 +32,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1306029290147905831}
-  - {fileID: 8579012455768490037}
+  - {fileID: 8717145369895228959}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
@@ -111,6 +111,7 @@ MonoBehaviour:
   mainCam: {fileID: 0}
   shot: {fileID: 3554915823613670951, guid: f36e9de117432d146844143213d78cc0, type: 3}
   sen: 0.5
+  modForce: 0
 --- !u!1 &1306029290147905851
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,7 +170,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 418c23fc0e28c4b4abc85a7bcc7e8320, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -209,6 +210,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1306029289293421165}
     m_Modifications:
+    - target: {fileID: 8717145370632253819, guid: f09f1f6dbc0ee324490c1b84fe74f99a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8485523114060451710, guid: f09f1f6dbc0ee324490c1b84fe74f99a,
         type: 3}
       propertyPath: m_Name
@@ -271,9 +277,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f09f1f6dbc0ee324490c1b84fe74f99a, type: 3}
---- !u!4 &8579012455768490037 stripped
+--- !u!4 &8717145369895228959 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8579012454838282065, guid: f09f1f6dbc0ee324490c1b84fe74f99a,
+  m_CorrespondingSourceObject: {fileID: 8717145370632253819, guid: f09f1f6dbc0ee324490c1b84fe74f99a,
     type: 3}
   m_PrefabInstance: {fileID: 1005725540}
   m_PrefabAsset: {fileID: 0}

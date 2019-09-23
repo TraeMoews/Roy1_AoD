@@ -32,7 +32,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8539776004841465729}
-  - {fileID: 8717145370579099509}
+  - {fileID: 8579012454824970591}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
@@ -169,7 +169,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 45b681c140999dc498ce0478191b8eaf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -209,6 +209,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8539776004757664603}
     m_Modifications:
+    - target: {fileID: 8579012454838282065, guid: 33ddcce8fbe60d5409f65d7af393fb09,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8717145370632253815, guid: 33ddcce8fbe60d5409f65d7af393fb09,
         type: 3}
       propertyPath: m_Name
@@ -271,9 +276,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33ddcce8fbe60d5409f65d7af393fb09, type: 3}
---- !u!4 &8717145370579099509 stripped
+--- !u!4 &8579012454824970591 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8717145370632253819, guid: 33ddcce8fbe60d5409f65d7af393fb09,
+  m_CorrespondingSourceObject: {fileID: 8579012454838282065, guid: 33ddcce8fbe60d5409f65d7af393fb09,
     type: 3}
   m_PrefabInstance: {fileID: 53947918}
   m_PrefabAsset: {fileID: 0}
