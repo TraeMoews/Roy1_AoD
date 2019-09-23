@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Herrera_MainMenu.unity
     guid: b1fa4bfd7c62d2e489297b5291bdd629
   - enabled: 1
+    path: Assets/Scenes/Select Level.unity
+    guid: 9eac34681bdf891418693926d5a21b89
+  - enabled: 1
     path: Assets/Scenes/Devin_3.unity
     guid: 559aa0c6929f0084d9c0cceff556f4ee
   - enabled: 1
@@ -29,4 +32,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jacob Levels/Jacob_5.unity
     guid: 2605cbaf6ce6839499a30d3a1873ceca
+  - enabled: 1
+    path: Assets/Scenes/BR_1.unity
+    guid: 5446c1e97cfbef84e9ef89620d9ca261
+  - enabled: 1
+    path: Assets/Scenes/BR_2.unity
+    guid: a4a8459865d768c4b983ca3833bccdf4
+  - enabled: 1
+    path: Assets/Scenes/BR_3.unity
+    guid: 3547bbfe2ce807b4e848132a180ede20
+  - enabled: 1
+    path: Assets/Scenes/BR_4.unity
+    guid: 9614169f49284594c891ef9cb40ba388
+  - enabled: 1
+    path: Assets/Scenes/BR_5.unity
+    guid: 1f11ce1a9290d2c4dadf0992c1bd8ceb
+  - enabled: 1
+    path: Assets/Scenes/Trae_1.unity
+    guid: cb63aa8df5f8c324193a6be983d170ac
+  - enabled: 1
+    path: Assets/Scenes/Trae_2.unity
+    guid: 952e4fea526c5f740bbdd7c09851c260
+  - enabled: 1
+    path: Assets/Scenes/Trae_3.unity
+    guid: 1c83fe7495be4984a96b6e5ea52acdc2
+  - enabled: 1
+    path: Assets/Scenes/Trae_4.unity
+    guid: 8a931bf5b36de34458b126716e1778a9
   m_configObjects: {}
