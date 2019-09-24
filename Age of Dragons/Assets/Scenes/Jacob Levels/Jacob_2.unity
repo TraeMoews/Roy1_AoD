@@ -2333,7 +2333,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 69de01866fc1af34f96c59bb8fe0c12b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2358,13 +2358,13 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.4
     widthCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.5176468
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -5334,7 +5334,7 @@ PrefabInstance:
     - target: {fileID: 1306029290147905831, guid: 1c86021993e046c4c9b7fe6d170591af,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.49
+      value: 0.83
       objectReference: {fileID: 0}
     - target: {fileID: 8579012455768490037, guid: 1c86021993e046c4c9b7fe6d170591af,
         type: 3}
@@ -5354,6 +5354,11 @@ PrefabInstance:
     - target: {fileID: 1306029290147905851, guid: 1c86021993e046c4c9b7fe6d170591af,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306029290147905850, guid: 1c86021993e046c4c9b7fe6d170591af,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6529,7 +6534,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 45b681c140999dc498ce0478191b8eaf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6554,13 +6559,13 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.4
     widthCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.55294037
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -7439,6 +7444,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8539776004841465741, guid: 1e93b42a390ae164aa4c82a76d914e1f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8539776004757664603, guid: 1e93b42a390ae164aa4c82a76d914e1f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7540,9 +7550,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8539776004841465741, guid: 1e93b42a390ae164aa4c82a76d914e1f,
+    - target: {fileID: 8539776004841465729, guid: 1e93b42a390ae164aa4c82a76d914e1f,
         type: 3}
-      propertyPath: m_IsActive
+      propertyPath: m_LocalPosition.z
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539776004841465740, guid: 1e93b42a390ae164aa4c82a76d914e1f,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
