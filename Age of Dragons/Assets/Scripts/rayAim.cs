@@ -17,9 +17,9 @@ public class rayAim : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //locking the mouse indicator
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        ////locking the mouse indicator
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
 
         //Calling the line Renderer
         lineRenderer = GetComponent<LineRenderer>();
@@ -28,17 +28,17 @@ public class rayAim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Input to unlock the mouse indicator
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
-        else if (Input.GetKey(KeyCode.Escape))
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
+        ////Input to unlock the mouse indicator
+        //if (Input.GetKey(KeyCode.Escape))
+        //{
+        //    Cursor.lockState = CursorLockMode.None;
+        //    Cursor.visible = true;
+        //}
+        //else if (Input.GetKey(KeyCode.Escape))
+        //{
+        //    Cursor.lockState = CursorLockMode.Locked;
+        //    Cursor.visible = false;
+        //}
 
         //Setting lineRenderer True in update
         lineRenderer.enabled = true;
