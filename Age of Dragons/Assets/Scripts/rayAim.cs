@@ -43,7 +43,7 @@ public class rayAim : MonoBehaviour
         //Setting lineRenderer True in update
         lineRenderer.enabled = true;
 
-        mousePosition = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        mousePosition = laserHit.transform.position;
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position,mousePosition, 3f);
 
@@ -52,7 +52,7 @@ public class rayAim : MonoBehaviour
         //checking the line location
         print(lineRenderer.GetPosition(0));
 
-        laserHit.transform.position = mousePosition;
+        //laserHit.transform.position = mousePosition;
 
         lineRenderer.SetPosition(0, startingPos.transform.position);
         lineRenderer.SetPosition(1, mousePosition);
