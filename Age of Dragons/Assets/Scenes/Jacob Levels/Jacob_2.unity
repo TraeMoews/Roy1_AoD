@@ -2324,10 +2324,10 @@ LineRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574014741}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_MotionVectors: 0
+  m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 1
@@ -7533,7 +7533,7 @@ PrefabInstance:
     - target: {fileID: 8539776004757664613, guid: 1e93b42a390ae164aa4c82a76d914e1f,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8717145370579099509, guid: 1e93b42a390ae164aa4c82a76d914e1f,
         type: 3}

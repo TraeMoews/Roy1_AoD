@@ -17,10 +17,6 @@ public class rayAim : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ////locking the mouse indicator
-        //Cursor.lockState = CursorLockMode.Locked;
-        //Cursor.visible = false;
-
         //Calling the line Renderer
         lineRenderer = GetComponent<LineRenderer>();
     }
@@ -28,31 +24,18 @@ public class rayAim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ////Input to unlock the mouse indicator
-        //if (Input.GetKey(KeyCode.Escape))
-        //{
-        //    Cursor.lockState = CursorLockMode.None;
-        //    Cursor.visible = true;
-        //}
-        //else if (Input.GetKey(KeyCode.Escape))
-        //{
-        //    Cursor.lockState = CursorLockMode.Locked;
-        //    Cursor.visible = false;
-        //}
-
         //Setting lineRenderer True in update
         lineRenderer.enabled = true;
 
         mousePosition = laserHit.transform.position;
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position,mousePosition, 3f);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, mousePosition, 1f);
 
-        Debug.DrawLine(transform.position, mousePosition, Color.blue);
+        //Check to see where the ray is
+        //Debug.DrawLine(transform.position, mousePosition, Color.blue);
 
         //checking the line location
-        print(lineRenderer.GetPosition(0));
-
-        //laserHit.transform.position = mousePosition;
+        //print(lineRenderer.GetPosition(0));
 
         lineRenderer.SetPosition(0, startingPos.transform.position);
         lineRenderer.SetPosition(1, mousePosition);
