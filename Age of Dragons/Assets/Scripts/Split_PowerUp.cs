@@ -32,7 +32,7 @@ public class Split_PowerUp : MonoBehaviour
     {
 
         Vector3 ballPos = new Vector3(this.transform.position.x, this.transform.position.y, transform.position.z);
-        ballsNo = Random.Range(2, 4);
+        ballsNo = Random.Range(4, 8);
 
         for (int i = 0; i < ballsNo + 1; i++)
         {
