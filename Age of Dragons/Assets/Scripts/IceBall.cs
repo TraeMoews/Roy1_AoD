@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class IceBall : MonoBehaviour
 {
-    Rigidbody myRB;
-    float timer = 10f;
-    float idleTimer = 2f;
+    
     public AudioSource BallSource;
     public AudioClip BallHit;
+
+    private Rigidbody myRB;
+    private float speed;
 
     // Start is called before the first frame update
     void Start()
@@ -19,25 +20,19 @@ public class IceBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (myRB.velocity.y <= .5f)
+        speed = myRB.velocity.magnitude;
+        if (speed < 0.08)
         {
-            idleTimer -= Time.deltaTime;
-            if(idleTimer <= 0)
-            {
-                Destroy(gameObject);
-            }
-        }
-        else
-        {
-            idleTimer = 2f;
+            Destroy(gameObject);
         }
     }
 
-    public void Fire(Vector3 _force)
+    public void Freeze(Vector3 _force)
     {
         myRB = GetComponent<Rigidbody>();
         myRB.AddForce(_force);
     }
+
     void OnCollisionEnter(Collision collision)
     {
         BallSource.Play();

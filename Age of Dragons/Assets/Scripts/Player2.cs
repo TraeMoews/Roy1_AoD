@@ -92,7 +92,7 @@ public class Player2 : MonoBehaviour
                 modForce = -targetDis * 10;
             }
 
-            myShot.GetComponent<IceBall>().Fire(targetLoc * (modForce));
+            myShot.GetComponent<IceBall>().Freeze(targetLoc * (modForce));
         }
     }
 }

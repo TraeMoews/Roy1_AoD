@@ -34,9 +34,9 @@ public class Player1 : MonoBehaviour
     void Update()
     {
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
-        //mousePos = mousePos * sen;
         mousePos.z = transform.position.z;
         reticel.transform.position = mousePos;
+
         if(myShot == null)
         {
             hasShot = false;
@@ -64,7 +64,7 @@ public class Player1 : MonoBehaviour
                 modForce = -targetDis * 10;
             }
             
-            myShot.GetComponent<IceBall>().Fire(targetLoc * (modForce));
+            myShot.GetComponent<FireBall>().Flame(targetLoc * (modForce));
         }
     }
 }

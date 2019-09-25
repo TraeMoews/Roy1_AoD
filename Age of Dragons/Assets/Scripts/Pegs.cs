@@ -1,6 +1,4 @@
-﻿
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,15 +11,11 @@ public class Pegs : MonoBehaviour
     public Rigidbody fireball;
     public Rigidbody iceball;
     public Material iceMat;
-    public Material fireMat;
-    
+    public Material fireMat;   
     public AudioClip IceSound;
     public AudioClip FireSound;
     public AudioSource PegSound;
-
     public Light lt;
-
-    
     public GameManager gm;
 
     #endregion
@@ -38,9 +32,7 @@ public class Pegs : MonoBehaviour
     {
         rend = GetComponentInChildren<Renderer>();
         rend.enabled = true;
-
-        lt = GetComponentInChildren<Light>();
-       
+        lt = GetComponentInChildren<Light>();      
         gm = FindObjectOfType<GameManager>();
     }
 
@@ -78,11 +70,8 @@ public class Pegs : MonoBehaviour
                 print("Second Fire");
                 fire = true;
                 gm.RemovePegs(this);
-                //Invoke("Peg Particle System", 1);
                 Instantiate(burst, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-                //print("boom boom");
                 Destroy(gameObject);
-                //gm.UpdateScore(gameObject.GetComponent<PegManagmentTemp>().points);
             }
             else if (collision.gameObject.CompareTag("Ice") && gameObject.CompareTag("Ice"))
             {
@@ -91,9 +80,7 @@ public class Pegs : MonoBehaviour
                 print("Second Ice");
                 ice = true;
                 gm.RemovePegs(this);
-                //Invoke("Peg Particle System", 1);
                 Instantiate(burst, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-                //print("boom boom");
                 Destroy(gameObject);
             }
             else if (gameObject.tag == "Fire")
@@ -112,7 +99,6 @@ public class Pegs : MonoBehaviour
                 gameObject.tag = collision.collider.tag;
                 rend.sharedMaterial = fireMat;
             }
-
         }
     }
     #endregion

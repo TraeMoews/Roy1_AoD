@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class FireBall : MonoBehaviour
 {
+    
     public AudioSource BallSource;
     public AudioClip BallHit;
+
+    private Rigidbody myRB;
+    public float speed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +20,19 @@ public class FireBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        speed = myRB.velocity.magnitude;
+        if (speed < 0.08)
+        {
+            Destroy(gameObject);
+        }
     }
+
+    public void Flame(Vector3 _force)
+    {
+        myRB = GetComponent<Rigidbody>();
+        myRB.AddForce(_force);
+    }
+
     void OnCollisionEnter(Collision collision)
     {
         BallSource.Play();
