@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     bool gameComplete;
     float timer = 5f;
 
+    public GameObject UImen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,12 +37,13 @@ public class GameManager : MonoBehaviour
     {
         if (gameComplete)
         {
-            timer -= Time.deltaTime;
-            if (timer <= 0)
-            {
-                
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
+            UImen.SetActive(true);
+            //timer -= Time.deltaTime;
+            //if (timer <= 0)
+            //{
+
+            //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            //}
         }
     }
 

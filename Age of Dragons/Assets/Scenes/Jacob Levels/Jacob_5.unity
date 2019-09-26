@@ -731,6 +731,7 @@ MonoBehaviour:
   bluescoreText: {fileID: 538202643}
   winnerText: {fileID: 538202642}
   points: 0
+  UImen: {fileID: 538202645}
 --- !u!4 &292864603
 Transform:
   m_ObjectHideFlags: 0
@@ -2470,6 +2471,12 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &538202645 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4307796557733437216, guid: 8d02947a1487d52499ccd4b77e4e62ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 538202641}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &550797316
 GameObject:
   m_ObjectHideFlags: 0
