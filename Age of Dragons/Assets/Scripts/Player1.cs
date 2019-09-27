@@ -34,6 +34,7 @@ public class Player1 : MonoBehaviour
     void Update()
     {
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
+        Cursor.visible = false;
         mousePos.z = transform.position.z;
         reticel.transform.position = mousePos;
 
