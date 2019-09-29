@@ -24,15 +24,45 @@ public class Player2 : MonoBehaviour
 
     bool hasShot;
 
+    public GameObject targetMove;
+    Vector3 startLoc;
+    bool backAgain;
+
     private void Awake()
     {
         QualitySettings.vSyncCount = 0;  // VSync must be disabled
         Application.targetFrameRate = 60;
+
+        if (targetMove != null)
+        {
+            startLoc = transform.position;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(targetMove != null)
+        {
+            if (transform.position == targetMove.transform.position)
+            {
+                backAgain = false;
+            }
+            else if (transform.position == startLoc)
+            {
+                backAgain = true;
+            }
+
+            if (backAgain)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, targetMove.transform.position, .2f);
+            }
+            else
+            {
+                transform.position = Vector3.MoveTowards(transform.position, startLoc, .2f);
+            }
+        }
+
         if (mainCam.WorldToScreenPoint(reticel.transform.position).x + (Input.GetAxis("Horizontal") * sen) < 0)
         {
             print("Off screen right");
