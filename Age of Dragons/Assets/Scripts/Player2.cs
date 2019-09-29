@@ -28,11 +28,14 @@ public class Player2 : MonoBehaviour
     Vector3 startLoc;
     bool backAgain;
 
+    GameManager gm;
+    public int explosionPower;
+
     private void Awake()
     {
         QualitySettings.vSyncCount = 0;  // VSync must be disabled
         Application.targetFrameRate = 60;
-
+        gm = FindObjectOfType<GameManager>();
         if (targetMove != null)
         {
             startLoc = transform.position;
@@ -106,6 +109,10 @@ public class Player2 : MonoBehaviour
             targetLoc = transform.position - reticel.transform.position;
             targetDis = Vector3.Distance(transform.position, reticel.transform.position);
             myShot = Instantiate(shot, transform.position, transform.rotation);
+            if(gm.ice >= explosionPower)
+            {
+                myShot.AddComponent<Explosions>();
+            }
             LaunchSource.clip = LaunchClip;
             LaunchSource.Play();
 

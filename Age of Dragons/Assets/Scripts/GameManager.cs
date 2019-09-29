@@ -15,8 +15,8 @@ public class GameManager : MonoBehaviour
     public Text winnerText;
 
     Pegs[] allPegs;
-    float fire;
-    float ice;
+    public float fire;
+    public float ice;
     List<Pegs> peg;
 
     public int points;
