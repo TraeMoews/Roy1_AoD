@@ -85,6 +85,7 @@ public class Player1 : MonoBehaviour
             if(gm.fire >= explosionPower)
             {
                 myShot.AddComponent<Explosions>();
+                print("Fire Explosions on");
             }
             LaunchSource.clip = LaunchClip;
             LaunchSource.Play();

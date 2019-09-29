@@ -112,6 +112,7 @@ public class Player2 : MonoBehaviour
             if(gm.ice >= explosionPower)
             {
                 myShot.AddComponent<Explosions>();
+                print("Ice Explosions on");
             }
             LaunchSource.clip = LaunchClip;
             LaunchSource.Play();

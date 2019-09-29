@@ -84,8 +84,7 @@ public class GameManager : MonoBehaviour
             }
 
         }
-
-        print(_totalPegs);
+        
         if (_totalPegs == allPegs.Length - 1)
         {
             if (fire > ice)
