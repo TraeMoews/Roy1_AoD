@@ -1195,7 +1195,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NEW GAME
+  m_Text: BEGIN BATTLE!
 --- !u!222 &71007615
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4819,15 +4819,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1892281098}
-        m_MethodName: loadLevel
-        m_Mode: 3
+      - m_Target: {fileID: 11500000, guid: 981eac2c367c2ae49ba3c18e29716a6a, type: 3}
+        m_MethodName: set_name
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: LevelSelect
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -7128,7 +7128,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 565515273}
-  - component: {fileID: 565515274}
   m_Layer: 0
   m_Name: MainMenu
   m_TagString: Untagged
@@ -7154,18 +7153,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &565515274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565515272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c96bbca2a0cbb645adb0adac926487d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &577528840
 GameObject:
   m_ObjectHideFlags: 0
@@ -8264,7 +8251,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 639806436}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 8c96bbca2a0cbb645adb0adac926487d, type: 3}
+        m_MethodName: set_name
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Credits
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &639806436
@@ -10565,7 +10563,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NEW GAME
+  m_Text: BATTLE
 --- !u!222 &782156370
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22227,7 +22225,6 @@ GameObject:
   - component: {fileID: 1562217201}
   - component: {fileID: 1562217204}
   - component: {fileID: 1562217203}
-  - component: {fileID: 1562217202}
   - component: {fileID: 1562217206}
   m_Layer: 0
   m_Name: Main Camera
@@ -22280,19 +22277,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &1562217202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114128942864567190, guid: da130a2f9740d9b4eb9ac5d181a703e7,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562217200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!81 &1562217203
 AudioListener:
   m_ObjectHideFlags: 0
@@ -24429,8 +24413,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1892281092}
-        m_MethodName: QuitGame
+      - m_Target: {fileID: 11500000, guid: 75e88ac31621d9f41803ea6d6f51d8df, type: 3}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26147,7 +26131,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1892281091}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16aabebf068b1864fb3c5ab64092c194, type: 3}
+  m_Script: {fileID: 11500000, guid: 75e88ac31621d9f41803ea6d6f51d8df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1892761066

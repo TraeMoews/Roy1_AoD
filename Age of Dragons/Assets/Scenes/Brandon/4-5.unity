@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: f531e09e2ad2fb440b4eed7605863143, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -2976,7 +2976,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322008054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -62.21, y: 0.27000016, z: -24.75}
+  m_LocalPosition: {x: 0.3, y: 0.27000016, z: -24.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14958,7 +14958,10 @@ MonoBehaviour:
   blueScore: 0
   bluescoreText: {fileID: 1913615610}
   winnerText: {fileID: 1913615608}
+  fire: 0
+  ice: 0
   points: 0
+  UImen: {fileID: 0}
 --- !u!4 &1790934079
 Transform:
   m_ObjectHideFlags: 0
