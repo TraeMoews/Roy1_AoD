@@ -46,15 +46,15 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void LoadMenu()
+    public void LoadMainMenu()
     {
-        SceneManager.LoadScene("Herrera_MainMenu");
+        SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1;
     }
 
     public void LoadLevelSelect()
     {
-        SceneManager.LoadScene("Select Level");
+        SceneManager.LoadScene("LevelSelect");
         Time.timeScale = 1;
     }
 
