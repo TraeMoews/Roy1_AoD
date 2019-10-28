@@ -814,7 +814,7 @@ Transform:
   - {fileID: 1610290116}
   - {fileID: 1345804035}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &87455142
 PrefabInstance:
@@ -1085,7 +1085,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &125163002
 PrefabInstance:
@@ -1227,7 +1227,7 @@ PrefabInstance:
     - target: {fileID: 1306029289293421165, guid: 1c86021993e046c4c9b7fe6d170591af,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1306029289293421165, guid: 1c86021993e046c4c9b7fe6d170591af,
         type: 3}
@@ -4907,7 +4907,7 @@ PrefabInstance:
     - target: {fileID: 8539776004757664603, guid: 1e93b42a390ae164aa4c82a76d914e1f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8539776004757664603, guid: 1e93b42a390ae164aa4c82a76d914e1f,
         type: 3}
@@ -11489,7 +11489,10 @@ MonoBehaviour:
   blueScore: 0
   bluescoreText: {fileID: 0}
   winnerText: {fileID: 0}
+  fire: 0
+  ice: 0
   points: 0
+  UImen: {fileID: 0}
 --- !u!4 &1992118011
 Transform:
   m_ObjectHideFlags: 0

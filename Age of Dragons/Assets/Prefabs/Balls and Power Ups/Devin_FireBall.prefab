@@ -79,6 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BallSource: {fileID: 7912999365382199908}
   BallHit: {fileID: 8300000, guid: 399c680884e7b9244a40c25b30a4844a, type: 3}
+  speed: 0
 --- !u!1 &3057906332264382997
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,7 +222,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.51930904
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -304,6 +305,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3057906332135613145}
     m_Modifications:
+    - target: {fileID: 2623395664160499161, guid: 17c1cf4e89dad8a4a9fc30a5648bfe02,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire Particle System 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3157967050387844926, guid: 17c1cf4e89dad8a4a9fc30a5648bfe02,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -358,11 +364,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2623395664160499161, guid: 17c1cf4e89dad8a4a9fc30a5648bfe02,
-        type: 3}
-      propertyPath: m_Name
-      value: Fire Particle System 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c1cf4e89dad8a4a9fc30a5648bfe02, type: 3}

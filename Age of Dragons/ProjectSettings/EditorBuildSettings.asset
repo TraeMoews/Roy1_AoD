@@ -18,6 +18,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Devin/1-2.unity
     guid: 6997570db8df55943a27a61261b386cc
   - enabled: 1
+    path: Assets/Scenes/Trae/2-1.unity
+    guid: cb63aa8df5f8c324193a6be983d170ac
+  - enabled: 1
+    path: Assets/Scenes/Trae/2-2.unity
+    guid: 952e4fea526c5f740bbdd7c09851c260
+  - enabled: 1
+    path: Assets/Scenes/Trae/2-3.unity
+    guid: 1c83fe7495be4984a96b6e5ea52acdc2
+  - enabled: 1
+    path: Assets/Scenes/Trae/2-4.unity
+    guid: 8a931bf5b36de34458b126716e1778a9
+  - enabled: 1
     path: Assets/Scenes/Jacob/3-1.unity
     guid: 4ebe1d983b8b4fb4eaf4ac69b651265c
   - enabled: 1
@@ -48,15 +60,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Brandon/4-5.unity
     guid: 1f11ce1a9290d2c4dadf0992c1bd8ceb
   - enabled: 1
-    path: Assets/Scenes/Trae/2-1.unity
-    guid: cb63aa8df5f8c324193a6be983d170ac
-  - enabled: 1
-    path: Assets/Scenes/Trae/2-2.unity
-    guid: 952e4fea526c5f740bbdd7c09851c260
-  - enabled: 1
-    path: Assets/Scenes/Trae/2-3.unity
-    guid: 1c83fe7495be4984a96b6e5ea52acdc2
-  - enabled: 1
-    path: Assets/Scenes/Trae/2-4.unity
-    guid: 8a931bf5b36de34458b126716e1778a9
+    path: Assets/Scenes/Brandon/4-6.unity
+    guid: 7b34cb62d012a0746a160bf200f2708b
   m_configObjects: {}
