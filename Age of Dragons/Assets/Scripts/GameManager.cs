@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public int blueScore;
     public Text bluescoreText;
 
+    public GameObject bScoreSize;
+    public GameObject rScoreSize;
     public Text winnerText;
 
     Pegs[] allPegs;
@@ -25,16 +27,30 @@ public class GameManager : MonoBehaviour
 
     public GameObject UImen;
 
+    public float rScoreTimer = 0;
+    public float bScoreTimer = 0;
+
     // Start is called before the first frame update
     void Start()
     {
         allPegs = FindObjectsOfType<Pegs>();
         bluescoreText.text = "Score: " + blueScore;
         redscoreText.text = "Score: " + redScore;
+
     }
 
     void Update()
     {
+        rScoreTimer += Time.deltaTime;
+        bScoreTimer += Time.deltaTime;
+        if (rScoreTimer >= .5f)
+        {
+            rScoreSize.transform.localScale = new Vector3(2, 3, 1);
+        }
+        if (bScoreTimer >= .5f)
+        {
+            bScoreSize.transform.localScale = new Vector3(2, 3, 1);
+        }
         if (gameComplete)
         {
             UImen.SetActive(true);
@@ -67,6 +83,7 @@ public class GameManager : MonoBehaviour
                     {
                         fire++;
                         redscoreText.text = "Score: " + fire * 100;
+                        AdjustRedText();
                         allPegs[i] = null;
 
                     }
@@ -74,6 +91,7 @@ public class GameManager : MonoBehaviour
                     {
                         ice++;
                         bluescoreText.text = "Score: " + ice * 100;
+                        AdjustBlueText();
                         allPegs[i] = null;
                     }
                 }
@@ -103,6 +121,16 @@ public class GameManager : MonoBehaviour
             gameComplete = true;
         }
 
+    }
+    public void AdjustRedText()
+    {
+        rScoreTimer = 0;
+        rScoreSize.transform.localScale = new Vector3(2, 4, 1);   
+    }
+    public void AdjustBlueText()
+    {
+        bScoreTimer = 0;
+        bScoreSize.transform.localScale = new Vector3(2, 4, 1);
     }
 
 }
