@@ -9,7 +9,7 @@ public class FireBall : MonoBehaviour
     public AudioClip BallHit;
 
     private Rigidbody myRB;
-    public float speed;
+    private float speed;
 
     // Start is called before the first frame update
     void Start()
