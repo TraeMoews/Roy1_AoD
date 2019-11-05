@@ -2335,7 +2335,7 @@ PrefabInstance:
     - target: {fileID: 1306029289293421165, guid: 1c86021993e046c4c9b7fe6d170591af,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.26
+      value: 13.26
       objectReference: {fileID: 0}
     - target: {fileID: 1306029289293421165, guid: 1c86021993e046c4c9b7fe6d170591af,
         type: 3}
@@ -2382,11 +2382,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 1306029289293421165, guid: 1c86021993e046c4c9b7fe6d170591af,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306029289293421165, guid: 1c86021993e046c4c9b7fe6d170591af,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306029289293421165, guid: 1c86021993e046c4c9b7fe6d170591af,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1306029289293421153, guid: 1c86021993e046c4c9b7fe6d170591af,
         type: 3}
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 1725142257}
+    - target: {fileID: 1306029289293421153, guid: 1c86021993e046c4c9b7fe6d170591af,
+        type: 3}
+      propertyPath: explosionPower
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5705077709476132333, guid: 1c86021993e046c4c9b7fe6d170591af,
         type: 3}
       propertyPath: m_Enabled
@@ -6791,7 +6811,7 @@ PrefabInstance:
     - target: {fileID: 8539776004757664603, guid: 1e93b42a390ae164aa4c82a76d914e1f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.95
+      value: 12.95
       objectReference: {fileID: 0}
     - target: {fileID: 8539776004757664603, guid: 1e93b42a390ae164aa4c82a76d914e1f,
         type: 3}
@@ -6838,11 +6858,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8539776004757664603, guid: 1e93b42a390ae164aa4c82a76d914e1f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539776004757664603, guid: 1e93b42a390ae164aa4c82a76d914e1f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539776004757664603, guid: 1e93b42a390ae164aa4c82a76d914e1f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8539776004757664615, guid: 1e93b42a390ae164aa4c82a76d914e1f,
         type: 3}
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 1725142257}
+    - target: {fileID: 8539776004757664615, guid: 1e93b42a390ae164aa4c82a76d914e1f,
+        type: 3}
+      propertyPath: explosionPower
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4929097980715555126, guid: 1e93b42a390ae164aa4c82a76d914e1f,
         type: 3}
       propertyPath: m_Enabled

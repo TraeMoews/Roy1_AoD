@@ -7,6 +7,8 @@ TagManager:
   - Fire
   - Ice
   - Plain
+  - RestingArea
+  - Town
   layers:
   - Default
   - TransparentFX
