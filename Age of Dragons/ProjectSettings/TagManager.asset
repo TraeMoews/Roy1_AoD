@@ -9,6 +9,8 @@ TagManager:
   - Plain
   - RestingArea
   - Town
+  - BlueText
+  - RedText
   layers:
   - Default
   - TransparentFX

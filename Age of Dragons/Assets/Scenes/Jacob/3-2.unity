@@ -3112,7 +3112,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 771455256}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 771455262}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -3124,7 +3124,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 771455256}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 771455261}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -3133,6 +3133,18 @@ MonoBehaviour:
 --- !u!1 &771455260 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4307796557733437216, guid: 8d02947a1487d52499ccd4b77e4e62ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 771455256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &771455261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8987757990397764852, guid: 8d02947a1487d52499ccd4b77e4e62ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 771455256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &771455262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8987757990458327919, guid: 8d02947a1487d52499ccd4b77e4e62ac,
     type: 3}
   m_PrefabInstance: {fileID: 771455256}
   m_PrefabAsset: {fileID: 0}
@@ -8351,9 +8363,15 @@ MonoBehaviour:
   redscoreText: {fileID: 771455259}
   blueScore: 0
   bluescoreText: {fileID: 771455258}
+  bScoreSize: {fileID: 771455262}
+  rScoreSize: {fileID: 771455261}
   winnerText: {fileID: 771455257}
+  fire: 0
+  ice: 0
   points: 0
   UImen: {fileID: 771455260}
+  rScoreTimer: 0
+  bScoreTimer: 0
 --- !u!4 &2089718799
 Transform:
   m_ObjectHideFlags: 0

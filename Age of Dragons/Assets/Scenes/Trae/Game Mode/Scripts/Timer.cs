@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
     public Text winnerText;
     public GameObject winnerObject;
 
-    bool gameOver;
+    public bool gameOver;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +32,7 @@ public class Timer : MonoBehaviour
             timerTwo.text = "Time: " + levelTimer.ToString("F2");
             EndGame();
         }
-        else
+        else if(!gameOver)
         {
             levelTimer -= Time.deltaTime;
             timerOne.text = "Time: " + levelTimer.ToString("F2");
@@ -56,9 +56,13 @@ public class Timer : MonoBehaviour
         {
             winnerText.text = "Player 1 is the winner with: " + player1.hoardGold + " Gold. Congratulations!";
         }
-        else
+        else if(player1.hoardGold < player2.hoardGold)
         {
             winnerText.text = "Player 2 is the winner with: " + player1.hoardGold + " Gold. Congratulations!";
+        }
+        else
+        {
+            winnerText.text = "Perfect Tie!";
         }
     }
 }

@@ -2087,9 +2087,10 @@ GameObject:
   - component: {fileID: 8987757990397764853}
   - component: {fileID: 8987757990397764859}
   - component: {fileID: 8987757990397764858}
+  - component: {fileID: 3826928336450208025}
   m_Layer: 5
   m_Name: ScoreTextRed
-  m_TagString: Untagged
+  m_TagString: RedText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2155,6 +2156,18 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
+--- !u!114 &3826928336450208025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8987757990397764852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2520a733dcaf0c843840985eeb2b21b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8987757990458327919
 GameObject:
   m_ObjectHideFlags: 0
@@ -2166,9 +2179,10 @@ GameObject:
   - component: {fileID: 8987757990458327916}
   - component: {fileID: 8987757990458327922}
   - component: {fileID: 8987757990458327917}
+  - component: {fileID: 7007126507341804510}
   m_Layer: 5
   m_Name: ScoreTextBlue
-  m_TagString: Untagged
+  m_TagString: BlueText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2234,6 +2248,18 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
+--- !u!114 &7007126507341804510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8987757990458327919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b27544e538b5d04a96f3ed3c2a98bf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8987757990493645435
 GameObject:
   m_ObjectHideFlags: 0

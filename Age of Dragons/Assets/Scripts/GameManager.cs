@@ -36,7 +36,8 @@ public class GameManager : MonoBehaviour
         allPegs = FindObjectsOfType<Pegs>();
         bluescoreText.text = "Score: " + blueScore;
         redscoreText.text = "Score: " + redScore;
-
+        rScoreSize = FindObjectOfType<RedText>().gameObject;
+        bScoreSize = FindObjectOfType<BlueText>().gameObject;
     }
 
     void Update()

@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Brandon/4-6.unity
     guid: 7b34cb62d012a0746a160bf200f2708b
+  - enabled: 1
+    path: Assets/Scenes/Trae/NewGame.unity
+    guid: f2950fc2d8a9c2f449d424ed6d0e89c4
   m_configObjects: {}

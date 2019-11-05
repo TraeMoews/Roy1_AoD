@@ -300,6 +300,9 @@ MonoBehaviour:
   LaunchSource: {fileID: 373577960534993840}
   LaunchClip: {fileID: 8300000, guid: f1da301bc27a8ba4fb5faefab258440b, type: 3}
   modForce: 0
+  targetMove: {fileID: 0}
+  explosionPower: 10
+  moveSpeed: 0
 --- !u!120 &3955345448891603724
 LineRenderer:
   m_ObjectHideFlags: 0

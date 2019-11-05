@@ -29,7 +29,8 @@ public class Player2 : MonoBehaviour
     bool backAgain;
 
     GameManager gm;
-    public int explosionPower;
+    int explosionPower = 10;
+    public float moveSpeed;
 
     private void Awake()
     {
@@ -58,11 +59,11 @@ public class Player2 : MonoBehaviour
 
             if (backAgain)
             {
-                transform.position = Vector3.MoveTowards(transform.position, targetMove.transform.position, .2f);
+                transform.position = Vector3.MoveTowards(transform.position, targetMove.transform.position, moveSpeed);
             }
             else
             {
-                transform.position = Vector3.MoveTowards(transform.position, startLoc, .2f);
+                transform.position = Vector3.MoveTowards(transform.position, startLoc, moveSpeed);
             }
         }
 
