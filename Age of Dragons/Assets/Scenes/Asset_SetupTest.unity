@@ -1442,16 +1442,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2623395664160499161, guid: 17c1cf4e89dad8a4a9fc30a5648bfe02,
-        type: 3}
-      propertyPath: m_Name
-      value: Fire Particle System
-      objectReference: {fileID: 0}
-    - target: {fileID: 2623395664160499161, guid: 17c1cf4e89dad8a4a9fc30a5648bfe02,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3157967050387844926, guid: 17c1cf4e89dad8a4a9fc30a5648bfe02,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1505,6 +1495,16 @@ PrefabInstance:
     - target: {fileID: 3157967050387844926, guid: 17c1cf4e89dad8a4a9fc30a5648bfe02,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623395664160499161, guid: 17c1cf4e89dad8a4a9fc30a5648bfe02,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire Particle System
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623395664160499161, guid: 17c1cf4e89dad8a4a9fc30a5648bfe02,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1738,16 +1738,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8172662614867019392, guid: 47818800ae7183f478261264f788708e,
-        type: 3}
-      propertyPath: m_Name
-      value: Yellow_Dragon_L
-      objectReference: {fileID: 0}
-    - target: {fileID: 8172662614867019392, guid: 47818800ae7183f478261264f788708e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8172662614867019404, guid: 47818800ae7183f478261264f788708e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1801,6 +1791,16 @@ PrefabInstance:
     - target: {fileID: 8172662614867019404, guid: 47818800ae7183f478261264f788708e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8172662614867019392, guid: 47818800ae7183f478261264f788708e,
+        type: 3}
+      propertyPath: m_Name
+      value: Yellow_Dragon_L
+      objectReference: {fileID: 0}
+    - target: {fileID: 8172662614867019392, guid: 47818800ae7183f478261264f788708e,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1886,16 +1886,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5524120707120200348, guid: 7dda94dc4e46ed3438b675e0a953bc0e,
-        type: 3}
-      propertyPath: m_Name
-      value: Yellow_Dragon_R
-      objectReference: {fileID: 0}
-    - target: {fileID: 5524120707120200348, guid: 7dda94dc4e46ed3438b675e0a953bc0e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5524120707120200336, guid: 7dda94dc4e46ed3438b675e0a953bc0e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1949,6 +1939,16 @@ PrefabInstance:
     - target: {fileID: 5524120707120200336, guid: 7dda94dc4e46ed3438b675e0a953bc0e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5524120707120200348, guid: 7dda94dc4e46ed3438b675e0a953bc0e,
+        type: 3}
+      propertyPath: m_Name
+      value: Yellow_Dragon_R
+      objectReference: {fileID: 0}
+    - target: {fileID: 5524120707120200348, guid: 7dda94dc4e46ed3438b675e0a953bc0e,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2048,16 +2048,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7934543592422096858, guid: 768f932553206224aa781c08cf34a90d,
-        type: 3}
-      propertyPath: m_Name
-      value: Ice Particle System
-      objectReference: {fileID: 0}
-    - target: {fileID: 7934543592422096858, guid: 768f932553206224aa781c08cf34a90d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7542277868098690992, guid: 768f932553206224aa781c08cf34a90d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2111,6 +2101,16 @@ PrefabInstance:
     - target: {fileID: 7542277868098690992, guid: 768f932553206224aa781c08cf34a90d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7934543592422096858, guid: 768f932553206224aa781c08cf34a90d,
+        type: 3}
+      propertyPath: m_Name
+      value: Ice Particle System
+      objectReference: {fileID: 0}
+    - target: {fileID: 7934543592422096858, guid: 768f932553206224aa781c08cf34a90d,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
