@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Movement : MonoBehaviour
 {
     Vector3 move;
+  
+    //Vector3 left = transform.Rotation(0, 0, -90);
     public float speed = .5f;
     CharacterController myCharCont;
 
@@ -20,6 +22,7 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         gameTimer = FindObjectOfType<Timer>();
         myCharCont = GetComponent<CharacterController>();
         maxStamina = 10f;
@@ -30,6 +33,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (!gameTimer.gameOver)
         {
             if (canMove)

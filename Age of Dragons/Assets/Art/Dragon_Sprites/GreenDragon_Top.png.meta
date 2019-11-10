@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: aab6fbcecf4c8a641b541a1187964037
+guid: 21b35ceb36937a445924f67cd7333052
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5381608543580245431
-    second: BlackDragon_Top_0
+      213: 1818931796835223959
+    second: GreenDragon_Top_0
   - first:
-      213: 913494161060423473
-    second: BlackDragon_Top_1
+      213: 118341275139267007
+    second: GreenDragon_Top_1
   - first:
-      213: -7881129577683374504
-    second: BlackDragon_Top_2
-  - first:
-      213: -2381306973697465632
-    second: BlackDragon_Top_3
+      213: 4574776926399442227
+    second: GreenDragon_Top_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -96,13 +93,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BlackDragon_Top_0
+      name: GreenDragon_Top_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 46
-        width: 96
-        height: 77
+        x: 12
+        y: 13
+        width: 72
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -110,20 +107,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 512022cbc4c40b4428f3d19f7c1de593
-      internalID: 5381608543580245431
+      spriteID: e3f9c878febb77e4a92d8cc51737aa17
+      internalID: 1818931796835223959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlackDragon_Top_1
+      name: GreenDragon_Top_1
       rect:
         serializedVersion: 2
-        x: 154
-        y: 47
-        width: 62
-        height: 78
+        x: 105
+        y: 12
+        width: 78
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +128,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfcaed4c97f90db488c65eb0e9baee9c
-      internalID: 913494161060423473
+      spriteID: 584622f7d72c3e64988b6908f3b1267d
+      internalID: 118341275139267007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlackDragon_Top_2
+      name: GreenDragon_Top_2
       rect:
         serializedVersion: 2
-        x: 233
-        y: 46
-        width: 96
-        height: 78
+        x: 218
+        y: 12
+        width: 44
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,29 +149,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af5d2675ffe9c664fb0bbeee67bd30bc
-      internalID: -7881129577683374504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlackDragon_Top_3
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 45
-        width: 96
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 194579c519faffe41baa839903cdeba9
-      internalID: -2381306973697465632
+      spriteID: ff4aea5ed1e5c934291f51eaab14ba7f
+      internalID: 4574776926399442227
       vertices: []
       indices: 
       edges: []
@@ -182,7 +158,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d408612afd9e9ea4c81b632432eef438
+    spriteID: 96700fd00216db042ae0f0ffa12dfb50
     internalID: 0
     vertices: []
     indices: 

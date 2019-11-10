@@ -30,6 +30,7 @@ public class PlayerTwoMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (!gameTimer.gameOver)
         {
             if (canMove)
@@ -81,9 +82,12 @@ public class PlayerTwoMove : MonoBehaviour
             myStamina.value = stamina * .1f;
 
         }
+
     }
 
-    private void OnTriggerEnter(Collider other)
+
+
+private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("RestingArea"))
         {
