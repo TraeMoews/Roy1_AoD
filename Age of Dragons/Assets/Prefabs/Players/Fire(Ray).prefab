@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 3955345448891603724}
   - component: {fileID: 3955345448891603725}
   m_Layer: 0
-  m_Name: Player 1 (Ray)
+  m_Name: Fire(Ray)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -301,7 +301,6 @@ MonoBehaviour:
   LaunchClip: {fileID: 8300000, guid: f1da301bc27a8ba4fb5faefab258440b, type: 3}
   modForce: 0
   targetMove: {fileID: 0}
-  explosionPower: 10
   moveSpeed: 0
 --- !u!120 &3955345448891603724
 LineRenderer:

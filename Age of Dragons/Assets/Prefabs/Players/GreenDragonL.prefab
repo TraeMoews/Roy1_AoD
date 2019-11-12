@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 8539776004757664614}
   - component: {fileID: 8539776004757664615}
   m_Layer: 0
-  m_Name: Player 1
+  m_Name: GreenDragonL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -188,7 +188,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4a19d4a984ed31442875b9407b2cd45d, type: 2}
+  - {fileID: 2100000, guid: 5a84217f750db8648b4d13145ffd5844, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -236,10 +236,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reticel: {fileID: 8539776004841465741}
   mainCam: {fileID: 0}
-  shot: {fileID: 3057906332135613221, guid: 04118b1338df61246b60b10e72ff4589, type: 3}
+  shot: {fileID: 0}
   LaunchSource: {fileID: 9004882774347753695}
   LaunchClip: {fileID: 8300000, guid: f1da301bc27a8ba4fb5faefab258440b, type: 3}
   modForce: 0
+  targetMove: {fileID: 0}
+  moveSpeed: 0
 --- !u!1 &8539776004841465741
 GameObject:
   m_ObjectHideFlags: 0

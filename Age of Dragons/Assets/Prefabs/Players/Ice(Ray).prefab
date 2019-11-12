@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 7687532694215276565}
   - component: {fileID: 7687532694215276564}
   m_Layer: 0
-  m_Name: Player 2 (Ray)
+  m_Name: Ice(Ray)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -369,7 +369,6 @@ MonoBehaviour:
   sen: 0.5
   modForce: 0
   targetMove: {fileID: 0}
-  explosionPower: 10
   moveSpeed: 0
 --- !u!120 &7687532694215276565
 LineRenderer:

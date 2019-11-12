@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1306029289293421152}
   - component: {fileID: 1306029289293421153}
   m_Layer: 0
-  m_Name: Player 2
+  m_Name: IceDragon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,6 +114,8 @@ MonoBehaviour:
   LaunchClip: {fileID: 8300000, guid: f1da301bc27a8ba4fb5faefab258440b, type: 3}
   sen: 0.5
   modForce: 0
+  targetMove: {fileID: 0}
+  moveSpeed: 0
 --- !u!1 &1306029290147905851
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,7 +9,11 @@ public class MainMenuScript : MonoBehaviour
     public void LoadLevelSelect()
     {
         SceneManager.LoadScene("LevelSelect");
-        Debug.Log("clicked");
+    }
+
+    public void CharacterSelect()
+    {
+        SceneManager.LoadScene("CharacterSelect");
     }
 
     public void LoadSelectedLevel(string nameScene)
