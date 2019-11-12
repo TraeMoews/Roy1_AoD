@@ -95,11 +95,11 @@ public class Player1 : MonoBehaviour
 
             if (targetDis <= 4)
             {
-                modForce = -50;
+                modForce = -75;
             }
             else if (targetDis >= 10)
             {
-                modForce = -50;
+                modForce = -75;
             }
             else
             {
