@@ -33,6 +33,7 @@ public class Player1 : MonoBehaviour
     GameManager gm;
     int explosionPower = 10;
     public float moveSpeed;
+    float sen = 10;
 
     private void Awake()
     {
@@ -46,7 +47,7 @@ public class Player1 : MonoBehaviour
     }
     void Update()
     {
-        if(targetMove != null)
+        if (targetMove != null)
         {
             if (transform.position == targetMove.transform.position)
             {
@@ -65,6 +66,7 @@ public class Player1 : MonoBehaviour
             {
                 transform.position = Vector3.MoveTowards(transform.position, startLoc, moveSpeed);
             }
+
         }
 
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
@@ -72,12 +74,12 @@ public class Player1 : MonoBehaviour
         mousePos.z = transform.position.z;
         reticel.transform.position = mousePos;
 
-        if(myShot == null)
+        if (myShot == null)
         {
             hasShot = false;
         }
 
-        if (Input.GetMouseButtonDown(0) && !hasShot)
+        if (Input.GetMouseButton(0) && !hasShot)
         {
             hasShot = true;
             targetLoc = transform.position - reticel.transform.position;

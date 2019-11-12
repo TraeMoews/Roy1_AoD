@@ -104,7 +104,7 @@ public class Player2 : MonoBehaviour
             hasShot = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && !hasShot)
+        if (Input.GetAxis("Fire1") > 0.5f && !hasShot)
         {
             hasShot = true;
             targetLoc = transform.position - reticel.transform.position;
