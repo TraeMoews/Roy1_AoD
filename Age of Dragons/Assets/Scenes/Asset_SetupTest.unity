@@ -1190,7 +1190,7 @@ PrefabInstance:
     - target: {fileID: 4972724093894108308, guid: 4f4f138f06942e74dac00584a6e7f9bf,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1790238363303952316, guid: 4f4f138f06942e74dac00584a6e7f9bf,
         type: 3}
@@ -1352,12 +1352,12 @@ PrefabInstance:
     - target: {fileID: 7762827859136982593, guid: 7bbd4be98be30ac4eab2b72ac199ee68,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3918559068390307177, guid: 7bbd4be98be30ac4eab2b72ac199ee68,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3918559068390307177, guid: 7bbd4be98be30ac4eab2b72ac199ee68,
         type: 3}
@@ -1426,12 +1426,12 @@ PrefabInstance:
     - target: {fileID: 2623181746782132857, guid: 5c35b2c112c503449927eb44ad9c5290,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8772439913953706321, guid: 5c35b2c112c503449927eb44ad9c5290,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 8772439913953706321, guid: 5c35b2c112c503449927eb44ad9c5290,
         type: 3}
@@ -1672,12 +1672,12 @@ PrefabInstance:
     - target: {fileID: 5729978822053483279, guid: 0d2193c11118bd84a8bb75c53db60569,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1323608694639151143, guid: 0d2193c11118bd84a8bb75c53db60569,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 1323608694639151143, guid: 0d2193c11118bd84a8bb75c53db60569,
         type: 3}
@@ -1687,7 +1687,7 @@ PrefabInstance:
     - target: {fileID: 1323608694639151143, guid: 0d2193c11118bd84a8bb75c53db60569,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1323608694639151143, guid: 0d2193c11118bd84a8bb75c53db60569,
         type: 3}
@@ -1738,6 +1738,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2623395664160499161, guid: 17c1cf4e89dad8a4a9fc30a5648bfe02,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire Particle System
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623395664160499161, guid: 17c1cf4e89dad8a4a9fc30a5648bfe02,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3157967050387844926, guid: 17c1cf4e89dad8a4a9fc30a5648bfe02,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1791,16 +1801,6 @@ PrefabInstance:
     - target: {fileID: 3157967050387844926, guid: 17c1cf4e89dad8a4a9fc30a5648bfe02,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2623395664160499161, guid: 17c1cf4e89dad8a4a9fc30a5648bfe02,
-        type: 3}
-      propertyPath: m_Name
-      value: Fire Particle System
-      objectReference: {fileID: 0}
-    - target: {fileID: 2623395664160499161, guid: 17c1cf4e89dad8a4a9fc30a5648bfe02,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2338,7 +2338,7 @@ PrefabInstance:
     - target: {fileID: 7980289591928757606, guid: c93d1ac5a284de14fb3d2f1bd968b588,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3703420570545587790, guid: c93d1ac5a284de14fb3d2f1bd968b588,
         type: 3}
@@ -2353,7 +2353,7 @@ PrefabInstance:
     - target: {fileID: 3703420570545587790, guid: c93d1ac5a284de14fb3d2f1bd968b588,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3703420570545587790, guid: c93d1ac5a284de14fb3d2f1bd968b588,
         type: 3}
@@ -2566,6 +2566,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7934543592422096858, guid: 768f932553206224aa781c08cf34a90d,
+        type: 3}
+      propertyPath: m_Name
+      value: Ice Particle System
+      objectReference: {fileID: 0}
+    - target: {fileID: 7934543592422096858, guid: 768f932553206224aa781c08cf34a90d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7542277868098690992, guid: 768f932553206224aa781c08cf34a90d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2619,16 +2629,6 @@ PrefabInstance:
     - target: {fileID: 7542277868098690992, guid: 768f932553206224aa781c08cf34a90d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7934543592422096858, guid: 768f932553206224aa781c08cf34a90d,
-        type: 3}
-      propertyPath: m_Name
-      value: Ice Particle System
-      objectReference: {fileID: 0}
-    - target: {fileID: 7934543592422096858, guid: 768f932553206224aa781c08cf34a90d,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
