@@ -25,8 +25,13 @@ public class Town : MonoBehaviour
 
     public TextMesh townLevelText;
 
+    public GameObject goldCollection;
+
+    GameObject totem;
+
     private void Start()
     {
+        totem = GetComponentInChildren<CapsuleCollider>().gameObject;
         townLevelText.text = "Level: " + townLevel.ToString();
         goldText.text = "Gold: " + gold;
         loyaltyBar.transform.localScale = new Vector3(loyalty, .25f, 1);
@@ -75,6 +80,14 @@ public class Town : MonoBehaviour
 
     void Owner()
     {
+        if (attacker.GetComponent<Movement>())
+        {
+            totem.GetComponent<MeshRenderer>().material.color = Color.black;
+        }
+        else if(attacker.GetComponent<PlayerTwoMove>())
+        {
+            totem.GetComponent<MeshRenderer>().material.color = Color.green;
+        }
         owner = attacker;
         health = maxHealth;
         healthBar.transform.localScale = new Vector3(health, .25f, 1);
@@ -95,6 +108,7 @@ public class Town : MonoBehaviour
     public void PickUpGold()
     {
         owner.GetComponent<Gold>().GainGold(Mathf.RoundToInt(gold));
+        Instantiate(goldCollection, owner.transform);
         gold = 0f;
     }
 

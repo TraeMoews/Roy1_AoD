@@ -19,6 +19,7 @@ public class Movement : MonoBehaviour
     Timer gameTimer;
 
     public Slider myStamina;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -41,8 +42,8 @@ public class Movement : MonoBehaviour
                 float x;
                 float z;
 
-                x = Input.GetAxis("Horizontal");
-                z = Input.GetAxis("Vertical");
+                x = Input.GetAxis("HorizontalTerr");
+                z = Input.GetAxis("VerticalTerr");
 
                 move = new Vector3(x, 0, z) * speed * Time.deltaTime;
                 myCharCont.Move(move);
