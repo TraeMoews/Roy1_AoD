@@ -485,8 +485,9 @@ Transform:
   - {fileID: 8991364757284993867}
   - {fileID: 1017394170619525104}
   - {fileID: 4143098086425390125}
+  - {fileID: 8987757988779244031}
   m_Father: {fileID: 8987757989422563527}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5482966865756065170
 GameObject:
@@ -895,14 +896,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8987757989422563524}
-        m_MethodName: LoadLevelSelect
-        m_Mode: 1
+        m_MethodName: LoadALevel
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: ScoreLevelSelect
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1276,15 +1277,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8987757988779244030}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 134.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 8987757989422563527}
-  m_RootOrder: 5
+  m_Father: {fileID: 5738331658176240309}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21.641357, y: 22.893402}
+  m_AnchoredPosition: {x: -81.64252, y: -33.28097}
   m_SizeDelta: {x: 414.4, y: 271.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8987757988779244029
@@ -1718,14 +1719,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8987757989422563524}
-        m_MethodName: LoadMenu
-        m_Mode: 1
+        m_MethodName: LoadALevel
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: NewMainMenu
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1766,7 +1767,6 @@ RectTransform:
   - {fileID: 8987757990397764853}
   - {fileID: 5421972103160760074}
   - {fileID: 8987757989016651162}
-  - {fileID: 8987757988779244031}
   - {fileID: 5738331658176240309}
   m_Father: {fileID: 0}
   m_RootOrder: 0

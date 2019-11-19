@@ -798,8 +798,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150943590}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -16.021948, y: -10.524574, z: 16.485453}
-  m_LocalScale: {x: 0.1, y: 10, z: 30}
+  m_LocalPosition: {x: -16.021948, y: -10.524574, z: 17.91}
+  m_LocalScale: {x: 2.0962, y: 10, z: 30}
   m_Children: []
   m_Father: {fileID: 36588319}
   m_RootOrder: 3
@@ -4954,7 +4954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180806335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5061618, y: 0.016379356, z: 12.9955635}
+  m_LocalPosition: {x: -1.5061618, y: 0.016379356, z: 12.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 118876986}
@@ -6850,9 +6850,15 @@ MonoBehaviour:
   redscoreText: {fileID: 1423630775}
   blueScore: 0
   bluescoreText: {fileID: 1423630774}
+  bScoreSize: {fileID: 0}
+  rScoreSize: {fileID: 0}
   winnerText: {fileID: 1423630773}
+  fire: 0
+  ice: 0
   points: 0
   UImen: {fileID: 1423630776}
+  rScoreTimer: 0
+  bScoreTimer: 0
 --- !u!4 &1541476059
 Transform:
   m_ObjectHideFlags: 0
@@ -8891,8 +8897,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2103205938}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -16.021948, y: -10.524574, z: -13.614548}
-  m_LocalScale: {x: 0.1, y: 10, z: 30}
+  m_LocalPosition: {x: -16.021948, y: -10.524574, z: -14.35}
+  m_LocalScale: {x: 1.7892001, y: 10, z: 30}
   m_Children: []
   m_Father: {fileID: 36588319}
   m_RootOrder: 2

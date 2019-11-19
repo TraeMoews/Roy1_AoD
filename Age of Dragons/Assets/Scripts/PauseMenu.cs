@@ -48,9 +48,15 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("NewMainMenu");
         Time.timeScale = 1;
     }
+
+	public void LoadALevel (string levelName)
+	{
+		SceneManager.LoadScene(levelName);
+		Time.timeScale = 1;
+	}
 
     public void LoadLevelSelect()
     {

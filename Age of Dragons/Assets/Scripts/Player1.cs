@@ -70,7 +70,7 @@ public class Player1 : MonoBehaviour
         }
 
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
-        Cursor.visible = false;
+        //Cursor.visible = false;
         mousePos.z = transform.position.z;
         reticel.transform.position = mousePos;
 
