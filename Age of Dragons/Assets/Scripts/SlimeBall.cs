@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IceBall : MonoBehaviour
+public class SlimeBall : MonoBehaviour
 {
 
     #region Public
@@ -34,7 +34,7 @@ public class IceBall : MonoBehaviour
         }
     }
 
-    public void Freeze(Vector3 _force)
+    public void Poison(Vector3 _force)
     {
         myRB = GetComponent<Rigidbody>();
         myRB.AddForce(_force);
@@ -45,3 +45,4 @@ public class IceBall : MonoBehaviour
         BallSource.Play();
     }
 }
+

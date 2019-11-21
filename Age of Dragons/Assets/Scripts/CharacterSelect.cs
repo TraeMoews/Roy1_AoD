@@ -7,6 +7,9 @@ public class CharacterSelect : MonoBehaviour
     #region Public
     public List<GameObject> models;
     public int selectionIndex = 0;
+    public Vector3 playerSpawnPosition;
+    public GameObject Player1;
+    public GameObject Player2;
     #endregion
 
     // Start is called before the first frame update
@@ -40,5 +43,9 @@ public class CharacterSelect : MonoBehaviour
         models[selectionIndex].SetActive(true);
     }
 
+    public void StartGame(int characterChoices)
+    {
+        GameObject SpawnPlayer1 = Instantiate(Player1, playerSpawnPosition, Quaternion.identity) as GameObject;
+    }
 
 }
