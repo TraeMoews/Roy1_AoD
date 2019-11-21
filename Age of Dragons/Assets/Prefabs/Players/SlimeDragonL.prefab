@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 8539776004757664614}
   - component: {fileID: 8539776004757664615}
   m_Layer: 0
-  m_Name: YellowDragonR
+  m_Name: SlimeDragonL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -188,7 +188,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9d562a636d3a2344f8267dc08b0d41f3, type: 2}
+  - {fileID: 2100000, guid: 5a84217f750db8648b4d13145ffd5844, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

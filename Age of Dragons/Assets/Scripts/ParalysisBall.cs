@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IceBall : MonoBehaviour
+public class ParalysisBall : MonoBehaviour
 {
-
     #region Public
     public GameObject slime;
     public AudioSource BallSource;
@@ -34,7 +33,7 @@ public class IceBall : MonoBehaviour
         }
     }
 
-    public void Freeze(Vector3 _force)
+    public void Shock(Vector3 _force)
     {
         myRB = GetComponent<Rigidbody>();
         myRB.AddForce(_force);
