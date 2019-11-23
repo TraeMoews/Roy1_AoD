@@ -63,7 +63,7 @@ public class PegManagmentTemp : MonoBehaviour
             }
             else
             {
-                print("Tie! ice: " + ice + " Fire: " + fire);
+                print("Tie! player1: " + ice + " Fire: " + fire);
             }
         }
 

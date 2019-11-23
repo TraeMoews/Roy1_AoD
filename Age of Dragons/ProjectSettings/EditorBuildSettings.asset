@@ -93,6 +93,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Jacob/TC/TC-10.unity
     guid: cf2a646640c6aae4e83d45a61f414bbf
   - enabled: 1
-    path: Assets/Scenes/TCLevelselect.unity
+    path: Assets/Scenes/TCLevelSelect.unity
     guid: df758086dc31add49aea1038f888c884
   m_configObjects: {}
