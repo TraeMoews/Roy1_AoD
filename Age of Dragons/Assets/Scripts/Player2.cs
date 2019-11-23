@@ -110,7 +110,7 @@ public class Player2 : MonoBehaviour
             targetLoc = transform.position - reticel.transform.position;
             targetDis = Vector3.Distance(transform.position, reticel.transform.position);
             myShot = Instantiate(shot, transform.position, transform.rotation);
-            if(gm.ice >= explosionPower)
+            if(gm.player1 >= explosionPower)
             {
                 myShot.AddComponent<Explosions>();
                 print("Ice Explosions on");

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3655367971345078070}
   - component: {fileID: 4116568554954874022}
   m_Layer: 5
-  m_Name: Panel_Blue
+  m_Name: Panel_P1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -714,7 +714,7 @@ GameObject:
   - component: {fileID: 8230445845634158699}
   - component: {fileID: 8226394850942066192}
   m_Layer: 5
-  m_Name: Panel_Red
+  m_Name: Panel_P2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2089,7 +2089,7 @@ GameObject:
   - component: {fileID: 8987757990397764858}
   - component: {fileID: 3826928336450208025}
   m_Layer: 5
-  m_Name: ScoreTextRed
+  m_Name: ScoreTextP2
   m_TagString: RedText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2181,7 +2181,7 @@ GameObject:
   - component: {fileID: 8987757990458327917}
   - component: {fileID: 7007126507341804510}
   m_Layer: 5
-  m_Name: ScoreTextBlue
+  m_Name: ScoreTextP1
   m_TagString: BlueText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
