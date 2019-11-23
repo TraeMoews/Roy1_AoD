@@ -19,13 +19,25 @@ public class Movement : MonoBehaviour
     Timer gameTimer;
 
     public Slider myStamina;
+	float stamRegen;
+	float sleepRegen;
+
+	float depletionRate;
+
+	int playerLevel;
+
+	Gold myGoldRef;
     
     // Start is called before the first frame update
     void Start()
     {
-        
         gameTimer = FindObjectOfType<Timer>();
         myCharCont = GetComponent<CharacterController>();
+		myGoldRef = GetComponent<Gold>();
+		depletionRate = .02f;
+		playerLevel = 1;
+		stamRegen = .075f;
+		sleepRegen = .05f;
         maxStamina = 10f;
         stamina = maxStamina;
         canMove = true;
@@ -54,11 +66,11 @@ public class Movement : MonoBehaviour
             {
                 if (canMove)
                 {
-                    stamina -= .02f;
+                    stamina -= depletionRate;
                 }
                 else
                 {
-                    stamina += .05f;
+                    stamina += sleepRegen;
                     if (stamina >= maxStamina)
                     {
                         canMove = true;
@@ -74,12 +86,23 @@ public class Movement : MonoBehaviour
             {
                 if (stamina <= maxStamina)
                 {
-                    stamina += .075f;
+                    stamina += stamRegen;
                 }
+
+				if (Input.GetKeyDown(KeyCode.Q))
+				{
+					//Check Gold & check level
+					if(myGoldRef.gold >= playerLevel * 100)
+					{
+						playerLevel++;
+						myGoldRef.RemoveGold((playerLevel - 1) * 100);
+						depletionRate = depletionRate / 2;
+					}
+				}
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    GetComponent<Gold>().GainHoardGold();
+                    myGoldRef.GainHoardGold();
                 }
             }
 
