@@ -5963,12 +5963,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ade1eb80a746a204184d39bf420351d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redScore: 0
-  redscoreText: {fileID: 8987757990397764858}
-  blueScore: 0
-  bluescoreText: {fileID: 8987757990458327917}
+  p1Score: 0
+  p1ScoreText: {fileID: 0}
+  p1ScoreSize: {fileID: 0}
+  player1: 0
+  p1ScoreTimer: 0
+  p2Score: 0
+  p2ScoreText: {fileID: 0}
+  p2ScoreSize: {fileID: 0}
+  player2: 0
+  p2ScoreTimer: 0
   winnerText: {fileID: 8987757988779244028}
   points: 0
+  UImen: {fileID: 0}
+  peg: []
+  Fire1: {fileID: 0}
+  Ice1: {fileID: 0}
+  Slime1: {fileID: 0}
+  Paralysis1: {fileID: 0}
+  Fire2: {fileID: 0}
+  Ice2: {fileID: 0}
+  Slime2: {fileID: 0}
+  Paralysis2: {fileID: 0}
 --- !u!1001 &1063110360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9972,7 +9988,7 @@ PrefabInstance:
     - target: {fileID: 1306029289293421165, guid: 1c86021993e046c4c9b7fe6d170591af,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.11
+      value: -13.69
       objectReference: {fileID: 0}
     - target: {fileID: 1306029289293421165, guid: 1c86021993e046c4c9b7fe6d170591af,
         type: 3}
@@ -12340,30 +12356,6 @@ Transform:
 --- !u!114 &8987757988779244028 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8987757988779244028, guid: 8d02947a1487d52499ccd4b77e4e62ac,
-    type: 3}
-  m_PrefabInstance: {fileID: 1511316230}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8987757990397764858 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8987757990397764858, guid: 8d02947a1487d52499ccd4b77e4e62ac,
-    type: 3}
-  m_PrefabInstance: {fileID: 1511316230}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8987757990458327917 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8987757990458327917, guid: 8d02947a1487d52499ccd4b77e4e62ac,
     type: 3}
   m_PrefabInstance: {fileID: 1511316230}
   m_PrefabAsset: {fileID: 0}
