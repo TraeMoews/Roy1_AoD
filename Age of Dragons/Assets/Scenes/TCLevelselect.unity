@@ -338,7 +338,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level Four
+  m_Text: Level 4
 --- !u!222 &281091105
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -585,7 +585,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level Three
+  m_Text: Level 3
 --- !u!222 &452455445
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1575,7 +1575,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level One
+  m_Text: Level 1
 --- !u!222 &1218998510
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2014,7 +2014,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level Nine
+  m_Text: Level 10
 --- !u!222 &1317411803
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2093,7 +2093,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level Five
+  m_Text: Level 6
 --- !u!222 &1326091960
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2172,7 +2172,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level Seven
+  m_Text: Level 8
 --- !u!222 &1379217269
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2596,7 +2596,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level Two
+  m_Text: Level 2
 --- !u!222 &1590701475
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3129,7 +3129,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level Six
+  m_Text: Level 7
 --- !u!222 &1837486462
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3208,7 +3208,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level Eight
+  m_Text: Level 9
 --- !u!222 &1927885878
 CanvasRenderer:
   m_ObjectHideFlags: 0
