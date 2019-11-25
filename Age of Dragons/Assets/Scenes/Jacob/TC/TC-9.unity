@@ -758,6 +758,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4059471558246474514, guid: 02ef771c103fc2c44a72341febbbad8d,
         type: 3}
+    - target: {fileID: 4960453799235383383, guid: 3468f8fb4c4cea04d8580a226fad764d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3902557698223945880, guid: 3468f8fb4c4cea04d8580a226fad764d,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -778,21 +783,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 1139147684610805571, guid: 3468f8fb4c4cea04d8580a226fad764d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 1139147684610805571, guid: 3468f8fb4c4cea04d8580a226fad764d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 4960453799235383383, guid: 3468f8fb4c4cea04d8580a226fad764d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5820208605577139152, guid: 3468f8fb4c4cea04d8580a226fad764d,
         type: 3}
       propertyPath: m_Radius
@@ -812,6 +802,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: -4.8401827e-21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139147684610805571, guid: 3468f8fb4c4cea04d8580a226fad764d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139147684610805571, guid: 3468f8fb4c4cea04d8580a226fad764d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.91
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3468f8fb4c4cea04d8580a226fad764d, type: 3}
@@ -1911,6 +1911,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c96bbca2a0cbb645adb0adac926487d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player1: {fileID: 0}
+  player2: {fileID: 0}
+  scenechoice: 
 --- !u!114 &971668736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3623,16 +3626,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4059471558246474514, guid: 02ef771c103fc2c44a72341febbbad8d,
         type: 3}
-    - target: {fileID: 1139147684610805571, guid: 3468f8fb4c4cea04d8580a226fad764d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.47
-      objectReference: {fileID: 0}
-    - target: {fileID: 1139147684610805571, guid: 3468f8fb4c4cea04d8580a226fad764d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 4960453799235383383, guid: 3468f8fb4c4cea04d8580a226fad764d,
         type: 3}
       propertyPath: m_IsActive
@@ -3652,6 +3645,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: 2.6900106e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139147684610805571, guid: 3468f8fb4c4cea04d8580a226fad764d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 1139147684610805571, guid: 3468f8fb4c4cea04d8580a226fad764d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3468f8fb4c4cea04d8580a226fad764d, type: 3}
@@ -3742,7 +3745,7 @@ PrefabInstance:
         type: 3}
       propertyPath: hoardGoldText
       value: 
-      objectReference: {fileID: 1760737686}
+      objectReference: {fileID: 1182599960}
     - target: {fileID: 5805160545919654851, guid: add49b5ff53fcc44b912f807707e7c58,
         type: 3}
       propertyPath: backGround
@@ -3916,7 +3919,7 @@ PrefabInstance:
         type: 3}
       propertyPath: hoardGoldText
       value: 
-      objectReference: {fileID: 1182599960}
+      objectReference: {fileID: 1760737686}
     - target: {fileID: 4399151244074484931, guid: 3e201f6dff75fcc4ab87ae837bb24e86,
         type: 3}
       propertyPath: backGround

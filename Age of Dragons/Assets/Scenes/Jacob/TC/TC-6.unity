@@ -2328,7 +2328,7 @@ PrefabInstance:
         type: 3}
       propertyPath: hoardGoldText
       value: 
-      objectReference: {fileID: 138950880}
+      objectReference: {fileID: 175984623}
     - target: {fileID: 4399151244074484931, guid: 3e201f6dff75fcc4ab87ae837bb24e86,
         type: 3}
       propertyPath: backGround
@@ -3780,7 +3780,7 @@ PrefabInstance:
         type: 3}
       propertyPath: hoardGoldText
       value: 
-      objectReference: {fileID: 175984623}
+      objectReference: {fileID: 138950880}
     - target: {fileID: 5805160545919654851, guid: add49b5ff53fcc44b912f807707e7c58,
         type: 3}
       propertyPath: backGround
